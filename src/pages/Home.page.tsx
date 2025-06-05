@@ -1,28 +1,41 @@
-import { getAllProjects } from "@/backend/controller/project.controller";
 import Card from "@/components/Card";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Pagination from "@/components/Pagination";
 import Wrapper from "@/components/Wrapper";
-import { ProjectType } from "@/types/project";
-import { GetServerSideProps } from "next";
+import { createClient } from "@supabase/supabase-js";
 // import { db } from "@/libs/firebase";
 
-interface ProjectsPageProps {
-  projects: ProjectType[];
-  lastVisibleId: string | null;
-  hasMore: boolean;
-}
 
 
-export const getServerSideProps: GetServerSideProps<ProjectsPageProps> = async () => {
-  const response = await getAllProjects();
-  return response;
-};
 
 
-export default async function HomePage() {
-  const { projects,  lastVisibleId } = (await getAllProjects()).props;
+
+export default async function HomePage({ page = 1 }: { page?: number }) {
+  const supabase = await createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL || "",
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "")
+  // const { data } = await supabase.from("projects").select();
+
+
+
+  // const page = 1; // current page
+  const pageSize = 2; // items per page
+
+  const from = (page - 1) * pageSize;
+  const to = from + pageSize - 1;
+
+
+  const { data, count } = await supabase
+    .from("projects")
+    .select("*", { count: "exact" }) // enables total count
+    .range(from, to);
+  // const { data, error } = await supabase.from('projects').insert(demo);
+  const totalPages = count ? Math.ceil(count / pageSize) : 0;
+  console.log({ count, totalPages: count ? Math.ceil(count / pageSize) : 0 });
+
+
+
 
   // console.log({ data })
 
@@ -41,12 +54,17 @@ export default async function HomePage() {
           </div>
 
           {
-            projects.map((project, index) => (
+            data?.map((project, index) => (
               <Card key={index} {...project} />
             ))
           }
 
-          <Pagination />
+          <Pagination
+            currentPage={page}
+            totalPages={totalPages}
+            getPageLink={(page) => `/?page=${page}`}
+          />
+
         </div>
       </div>
     </Wrapper>

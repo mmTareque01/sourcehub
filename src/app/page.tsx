@@ -1,9 +1,11 @@
 import HomePage from "@/pages/Home.page";
 
-export default function Home() {
+
+export default async function Home({ searchParams }: { searchParams: Promise<{ page?: number }> }) {
+  const {page} = await searchParams;
   return (
-      <>
-        <HomePage/>
-      </>
+    <>
+      <HomePage page={page} />
+    </>
   );
 }
