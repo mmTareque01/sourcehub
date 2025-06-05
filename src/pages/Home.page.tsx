@@ -1,47 +1,21 @@
+import { getProjects } from "@/backend/controller/project.controller";
 import Card from "@/components/Card";
-import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Pagination from "@/components/Pagination";
 import Wrapper from "@/components/Wrapper";
-import { createClient } from "@supabase/supabase-js";
-// import { db } from "@/libs/firebase";
 
 
 
 
 
 
-export default async function HomePage({ page = 1 }: { page?: number }) {
-  const supabase = await createClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL || "",
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "")
-  // const { data } = await supabase.from("projects").select();
-
-
-
-  // const page = 1; // current page
+export default async function HomePage({ page = 1, q = '' }: { page?: number, q?: string }) {
   const pageSize = 2; // items per page
-
-  const from = (page - 1) * pageSize;
-  const to = from + pageSize - 1;
-
-
-  const { data, count } = await supabase
-    .from("projects")
-    .select("*", { count: "exact" }) // enables total count
-    .range(from, to);
-  // const { data, error } = await supabase.from('projects').insert(demo);
-  const totalPages = count ? Math.ceil(count / pageSize) : 0;
-  console.log({ count, totalPages: count ? Math.ceil(count / pageSize) : 0 });
-
-
-
-
-  // console.log({ data })
+  const { projects, totalPages } = await getProjects(page, pageSize, q);
 
   return (
     <Wrapper>
-      <Header />
+
       <div className="px-40 flex flex-1 justify-center py-5">
         <div className="layout-content-container flex flex-col max-w-[960px] flex-1">
           <Hero />
@@ -54,7 +28,7 @@ export default async function HomePage({ page = 1 }: { page?: number }) {
           </div>
 
           {
-            data?.map((project, index) => (
+            projects?.map((project, index) => (
               <Card key={index} {...project} />
             ))
           }
@@ -62,7 +36,7 @@ export default async function HomePage({ page = 1 }: { page?: number }) {
           <Pagination
             currentPage={page}
             totalPages={totalPages}
-            getPageLink={(page) => `/?page=${page}`}
+            getPageLink={(page) => `/?page=${page}&q=${q}`}
           />
 
         </div>

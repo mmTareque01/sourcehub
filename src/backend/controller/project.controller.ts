@@ -1,85 +1,33 @@
-// import { getProjects } from "../repository/project.repo";
+import { supabase } from "../connection";
 
-// //==============={ Get Customers From DB }===============//
+export const getProjects = async (page: number, limit: number, q: string) => {
+  const from = (page - 1) * limit;
+  const to = from + limit - 1;
+  console.log({q})
 
-// // export const getAllProjects_x = async () => {
-// //   try {
-// //     // const projects = await getProjects();
-// //     const { data, lastVisible } = await getProjects({ pageSize: 2 });
-// //     console.log({lastVisible})
-// //     return { props: { projects: data, lastVisible } }; // Important for SSR to return the data
-// //   } catch (error) {
-// //     console.error("Error fetching customers:", error);
-// //     return {
-// //       props: {
-// //         projects: [],
-// //         lastVisible: {},
-// //         error: "Failed to load customers",
-// //       },
-// //     };
-// //   }
-// // };
+  let query = supabase
+    .from("projects")
+    .select("*", { count: "exact" })
+    .range(from, to);
+
+  if (q && q.trim() !== "") {
+    query = query.or(`title.ilike.%${q}%,description.ilike.%${q}%`);
+  }
+
+  // console.log({query})
+
+  const { data, error, count } = await query;
+
+  if (error) {
+    // console.error("Error fetching projects:", error);
+    throw new Error("Failed to fetch projects");
+  }
 
 
-// export const getAllProjects = async (lastVisibleId?: string) => {
-//   try {
-//     const { data, lastVisibleId: newLastVisibleId, hasMore } = await getProjects({ 
-//       pageSize: 2,
-//       lastVisibleId 
-//     });
-    
-//     return { 
-//       props: { 
-//         projects: data,
-//         lastVisibleId: newLastVisibleId,
-//         hasMore
-//       }
-//     };
-//   } catch (error) {
-//     console.error("Error fetching projects:", error);
-//     return {
-//       props: {
-//         projects: [],
-//         lastVisibleId: null,
-//         hasMore: false,
-//         error: "Failed to load projects"
-//       }
-//     };
-//   }
-// };
-
-// // //==============={ Add New Customer }===============//
-// // export const addNewCustomerController = (dispatch, data) => {
-// //     addNewCustomer(data)
-// //         .then(res => {
-// //             data.id = res.id
-// //             dispatch(addCustomer(data))
-// //         })
-// //         .catch(error => {
-// //             console.log(error)
-// //         })
-
-// // }
-
-// // //==============={ Update Customer }===============//
-// // export const updateCustomerController = (dispatch, data) => {
-
-// //     updateCustomer(data.id, { [CustomerModelKey.name]: data.name, [CustomerModelKey.email]: data.email, [CustomerModelKey.phoneNumber]: data.phoneNumber, [CustomerModelKey.address]: data.address, [CustomerModelKey.identity]: data.identity })
-// //         .then(res => {
-// //             dispatch(upgradeCustomer(data))
-// //         })
-// //         .catch(error => {
-// //             console.log(error)
-// //         })
-// // }
-
-// // //==============={ Delete Customer }===============//
-// // export const deleteCustomerController = (dispatch, id) => {
-// //     deleteCustomer(id)
-// //         .then(res => {
-// //             dispatch(removeCustomer(id))
-// //         })
-// //         .catch(error => {
-// //             console.log(error)
-// //         })
-// // }
+  return {
+    projects: data || [],
+    totalCount: count || 0,
+    totalPages: count ? Math.ceil(count / limit) : 0,
+    searchQuery: q,
+  };
+};
