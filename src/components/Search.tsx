@@ -1,25 +1,25 @@
-'use client'
-import { useRouter } from 'next/navigation';
+// 'use client'
+// import { useRouter } from 'next/navigation';
 import React from 'react';
 
 export default function Search({ onNav = false }) {
-    const router = useRouter()
+    // const router = useRouter()
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        const formData = new FormData(e.currentTarget);
-        const search = formData.get('search');
+    // const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    //     e.preventDefault();
+    //     const formData = new FormData(e.currentTarget);
+    //     const search = formData.get('search');
 
-        if (typeof search === 'string' && search.trim() !== '') {
-            router.push(`/?q=${encodeURIComponent(search)}`);
-        }
-    };
+    //     if (typeof search === 'string' && search.trim() !== '') {
+    //         router.push(`/?q=${encodeURIComponent(search)}`);
+    //     }
+    // };
 
 
 
     return (
         <>
-            <form onSubmit={handleSubmit} className='flex flex-1 justify-end gap-8'>
+            <form  action={'/'} className='flex flex-1 justify-end gap-8'>
                 {onNav ? (
 
                     <>

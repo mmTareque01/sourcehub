@@ -27,6 +27,8 @@ export default function Hero() {
                     </label>
                 </div>
             </div>
+
+            
         </div>
     )
 }

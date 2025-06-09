@@ -17,34 +17,35 @@ export default function SubmitProjects() {
     const handleSubmit = async (data: SubmitProjectFormProps) => {
         setLoading(true);
         setSubmitted(false);
+        try {
 
-        console.log({
-            data: {
-                ...data,
-                techStacks: stringToarray(data?.techStacks as string || "")
+            const res = await createProject({
+                // ...data,
+                title: data.title,
+                description: data.description,
+                techStack: stringToarray(data?.techStacks as string || ''),
+                tags: stringToarray(data?.tags || ''),
+                links: {
+                    github: data.github as string,
+                    demo: data.demo as string,
+                    youtube: data.youtube as string,
+
+
+                }
+            })
+
+
+            if (res) {
+                setSubmitted(true);
+            } else {
+                alert("Submission failed. Please try again.");
             }
-        })
-
-        const res = await createProject({
-            // ...data,
-            title: data.title,
-            description: data.description,
-            techStack: stringToarray(data?.techStacks as string || ''),
-            tags: stringToarray(data?.tags || ''),
-            links: {
-                github: data.github as string,
-                demo: data.demo as string,
-                youtube: data.youtube as string,
-
-
-            }
-        })
-
-        setLoading(false);
-        if (res) {
-            setSubmitted(true);
-        } else {
-            alert("Submission failed. Please try again.");
+        }
+        catch (error) {
+            console.log('error: ', error)
+        }
+        finally {
+            setLoading(false);
         }
     };
 
