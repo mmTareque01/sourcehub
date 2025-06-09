@@ -14,7 +14,9 @@ export default function Form<T extends Record<string, FieldValue>>({
     loading = false,
     submitText = "Submit",
     className = "",
+    submitClassName = "",
     formRef,
+
 }: FormProps<T>) {
 
     const getInitialFormData = (): FormData<T> => {
@@ -253,9 +255,9 @@ export default function Form<T extends Record<string, FieldValue>>({
             ))}
 
             <Button
-                // type="submit"
+                type="submit"
                 disabled={loading}
-                className="w-full"
+                className={submitClassName}
             >
                 {loading ? "Processing..." : submitText}
             </Button>

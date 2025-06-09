@@ -36,7 +36,8 @@ export interface FieldProps<T extends Record<string, FieldValue>> {
     | "select"
     | "textarea"
     | "checkbox"
-    | "number";
+    | "number"
+    | "url";
   label?: string;
   required?: boolean;
   placeholder?: string;
@@ -54,6 +55,7 @@ export interface FormProps<T extends Record<string, FieldValue>> {
   loading?: boolean;
   submitText?: string;
   className?: string;
+  submitClassName?: string;
   formRef?: React.RefObject<HTMLFormElement>;
 }
 

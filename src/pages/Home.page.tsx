@@ -10,7 +10,7 @@ import Wrapper from "@/components/Wrapper";
 
 
 export default async function HomePage({ page = 1, q = '' }: { page?: number, q?: string }) {
-  const pageSize = 2; // items per page
+  const pageSize = 10; // items per page
   const { projects, totalPages } = await getProjects(page, pageSize, q);
 
   return (

@@ -1,6 +1,6 @@
 export interface ProjectType {
   id?: string
-  bgImg: string
+  bgImg?: string
   title: string
   description: string
   techStack?: string[]     // e.g., ['Next.js', 'Tailwind']

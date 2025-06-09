@@ -1,13 +1,21 @@
 import { supabase } from "../connection";
 
-export const getProjects = async (page: number, limit: number, q: string) => {
+export const getProjects = async (
+  page: number,
+  limit: number,
+  q: string,
+  orderBy: string = "created_at",
+  ascending: boolean = false
+) => {
   const from = (page - 1) * limit;
   const to = from + limit - 1;
-  console.log({q})
+  console.log({ q });
 
   let query = supabase
     .from("projects")
     .select("*", { count: "exact" })
+    .order(orderBy, { ascending })
+    .eq('status', 'active')
     .range(from, to);
 
   if (q && q.trim() !== "") {
@@ -22,7 +30,6 @@ export const getProjects = async (page: number, limit: number, q: string) => {
     // console.error("Error fetching projects:", error);
     throw new Error("Failed to fetch projects");
   }
-
 
   return {
     projects: data || [],

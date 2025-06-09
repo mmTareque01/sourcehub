@@ -1,4 +1,4 @@
-import {  ReactNode } from "react";
+import { ReactNode } from "react";
 
 
 interface LabelProps {
@@ -11,13 +11,7 @@ const Label = ({ htmlFor, children, className }: LabelProps) => {
   return (
     <label
       htmlFor={htmlFor}
-    //   className={clsx(
-    //     twMerge(
-    //       "mb-1.5 block text-sm font-medium text-gray-700 dark:text-gray-400",
-    //       className
-    //     )
-    //   )}
-    className={`mb-1.5 block text-sm font-medium text-gray-700 dark:text-gray-400 ${className}`}
+      className={`block text-large font-medium text-white mb-1 ${className}`}
     >
       {children}
     </label>
