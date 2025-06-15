@@ -67,7 +67,7 @@ export default function SubmitProjects() {
                         handleSubmit(data as SubmitProjectFormProps)
                     }}
                     submitText='Submit Project'
-                    submitClassName="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition"
+                    submitClassName="bg-blue-600  px-6 py-2 rounded hover:bg-blue-700 transition"
                     loading={loading}
                 />
 

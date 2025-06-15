@@ -29,6 +29,7 @@ export const getProjects = async (
   if (error) {
     // console.error("Error fetching projects:", error);
     throw new Error("Failed to fetch projects");
+    
   }
 
   return {

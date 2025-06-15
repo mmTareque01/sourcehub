@@ -29,7 +29,7 @@ const Button = ({
   // Variant Classes
   const variantClasses = {
     primary:
-      "bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition text-large cursor-pointer",
+      "bg-blue-600  px-6 py-2 rounded hover:bg-blue-700 transition text-large cursor-pointer",
     outline:
       "bg-white text-gray-700 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 dark:bg-gray-800 dark:text-gray-400 dark:ring-gray-700 dark:hover:bg-white/[0.03] dark:hover:text-gray-300",
   };

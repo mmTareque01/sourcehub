@@ -22,10 +22,10 @@ export default function Card({
                     <div className="flex flex-col gap-1">
 
                         <div className='flex items-center justify-between'>
-                            <p className="text-white text-base font-bold leading-tight">{title}</p>
+                            <p className=" text-base font-bold leading-tight">{title}</p>
                             <div>
                                 {(links.github || links.demo || links.youtube) && (
-                                    <div className="flex gap-4 mt-2 text-white">
+                                    <div className="flex gap-4 mt-2 ">
                                         {links.github && (
                                             <a
                                                 href={links.github}
@@ -67,7 +67,7 @@ export default function Card({
                     <div className='flex items-center justify-between'>
                         {/* <div>
                             <button
-                                className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#243647] text-white text-sm font-medium leading-normal w-fit"
+                                className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#243647]  text-sm font-medium leading-normal w-fit"
                             >
                                 <span className="truncate">View Project</span>
                             </button>
@@ -78,7 +78,7 @@ export default function Card({
                                 {techStack.map((tech, idx) => (
                                     <span
                                         key={idx}
-                                        className="bg-white/10 text-white text-xs px-2 py-1 rounded-md"
+                                        className="bg-white/10  text-xs px-2 py-1 rounded-md"
                                     >
                                         {tech}
                                     </span>
@@ -103,7 +103,7 @@ export default function Card({
     //         ></div>
 
     //         <div className="flex flex-col gap-2">
-    //             <p className="text-white text-base font-medium leading-normal mb-4 line-clamp-2">
+    //             <p className=" text-base font-medium leading-normal mb-4 line-clamp-2">
     //                 {title}
     //             </p>
 
@@ -116,7 +116,7 @@ export default function Card({
     //                     {techStack.map((tech, idx) => (
     //                         <span
     //                             key={idx}
-    //                             className="bg-white/10 text-white text-xs px-2 py-1 rounded-md"
+    //                             className="bg-white/10  text-xs px-2 py-1 rounded-md"
     //                         >
     //                             {tech}
     //                         </span>
@@ -138,7 +138,7 @@ export default function Card({
     //             )}
 
     //             {(links.github || links.demo || links.youtube) && (
-    //                 <div className="flex gap-4 mt-2 text-white">
+    //                 <div className="flex gap-4 mt-2 ">
     //                     {links.github && (
     //                         <a
     //                             href={links.github}

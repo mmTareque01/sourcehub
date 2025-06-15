@@ -40,13 +40,13 @@ export default function Search({ onNav = false }) {
                                 <input
                                     name="search"
                                     placeholder="Search"
-                                    className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border-none bg-[#223549] focus:border-none h-full placeholder:text-[#90accb] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                                    className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl  focus:outline-0 focus:ring-0 border-none bg-[#223549] focus:border-none h-full placeholder:text-[#90accb] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
                                 />
                             </div>
                         </label>
                         <button
                             type="submit"
-                            className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#3490f3] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+                            className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#3490f3]  text-sm font-bold leading-normal tracking-[0.015em]"
                         >
                             <span className="truncate">Search</span>
                         </button>
@@ -68,7 +68,7 @@ export default function Search({ onNav = false }) {
                         <input
                             placeholder="Search projects..."
                             name="search"
-                            className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border border-[#314c68] bg-[#182634] focus:border-[#314c68] h-full placeholder:text-[#90accb] px-[15px] rounded-r-none border-r-0 pr-2 rounded-l-none border-l-0 pl-2 text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal"
+                            className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl  focus:outline-0 focus:ring-0 border border-[#314c68] bg-[#182634] focus:border-[#314c68] h-full placeholder:text-[#90accb] px-[15px] rounded-r-none border-r-0 pr-2 rounded-l-none border-l-0 pl-2 text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal"
                             // value={query || ''}
                             // onChange={e => {
                             //     setQuery(e.target.value)
@@ -76,7 +76,7 @@ export default function Search({ onNav = false }) {
                         />
                         <div className="flex items-center justify-center rounded-r-xl border-l-0 border border-[#314c68] bg-[#182634] pr-[7px]">
                             <button
-                                className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#3490f3] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                                className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#3490f3]  text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
                             >
                                 <span className="truncate">Search</span>
                             </button>

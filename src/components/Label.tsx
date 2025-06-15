@@ -11,7 +11,7 @@ const Label = ({ htmlFor, children, className }: LabelProps) => {
   return (
     <label
       htmlFor={htmlFor}
-      className={`block text-large font-medium text-white mb-1 ${className}`}
+      className={`block text-large font-medium  mb-1 ${className}`}
     >
       {children}
     </label>

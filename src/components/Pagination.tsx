@@ -43,7 +43,7 @@ export default function Pagination({
   const visiblePages = generatePageRange(current, totalPages);
 
   return (
-    <div className="flex items-center justify-center gap-2 p-4 text-white flex-wrap">
+    <div className="flex items-center justify-center gap-2 p-4  flex-wrap">
       {/* Previous Button */}
       <Link
         href={current > 1 ? getPageLink(current - 1) : "#"}
