@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter, Noto_Sans } from "next/font/google";
-import "../style/globals.css";
-import Header from "@/components/Header";
+import "../../style/globals.css";
+import AppSidebar from "@/components/dashboard-components/AppSidebar";
+import Backdrop from "@/components/dashboard-components/Backdrop";
+import AppHeader from "@/components/dashboard-components/AppHeader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,8 +34,21 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${notoSans.variable} antialiased`}
       >
-        <Header />
-        {children}
+        <div className="min-h-screen xl:flex bg-[#F9FAFB] text-gray-800 placeholder:text-gray-600">
+          <div>
+            <AppSidebar />
+            <Backdrop />
+          </div>
+
+          <div
+            className={`flex-1 lg:ml-[290px] transition-all duration-300 ease-in-out`}
+          >
+            <AppHeader />
+            <div className="p-4 mx-auto max-w-screen-2xl md:p-6 bg-[#F9FAFB]">
+              {children}
+            </div>
+          </div>
+        </div>
       </body>
     </html>
   );

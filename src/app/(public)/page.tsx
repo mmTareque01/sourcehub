@@ -1,6 +1,6 @@
 import HomePage from "@/pages/Home.page";
 import { Suspense } from "react";
-import Loading from "./loading";
+import Loading from "../loading";
 
 
 export default async function Home({ searchParams }: {

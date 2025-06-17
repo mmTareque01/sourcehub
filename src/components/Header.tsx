@@ -1,7 +1,9 @@
+'use client'
 import React from 'react'
 import Link from 'next/link'
 
 export default function Header() {
+  const mode = process.env.NEXT_PUBLIC_MODE || "dev"
   return (
     <header className="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#223549] px-10 py-3">
       <div className="flex items-center gap-8">
@@ -32,14 +34,24 @@ export default function Header() {
           {/* <Link className=" text-sm font-medium leading-normal" href="/submit-project">Submit Project</Link> */}
         </div>
       </div>
-      <div className="">
+      <div className="flex gap-2">
         {/* <Search onNav={true}/> */}
         <Link
-        href={'/submit-projects'}
+          href={'/submit-projects'}
           className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#3490f3]  text-sm font-bold leading-normal tracking-[0.015em]"
         >
           <span className="truncate">Submit Project</span>
         </Link>
+
+        {
+          mode == 'dev' ?
+            <Link
+              href={'/dashboard'}
+              className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#6b78f0]  text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+              <span className="truncate">Admin</span>
+            </Link> : null
+        }
       </div>
     </header>
   )
