@@ -73,8 +73,8 @@
 
 
 import { useState } from 'react'
-import { useRouter } from 'next/router'
 import { supabase } from '@/backend/connection'
+import { useRouter } from 'next/navigation';
 
 export default function Login() {
   const [email, setEmail] = useState('')
