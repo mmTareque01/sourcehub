@@ -2,11 +2,12 @@
 
 export interface SubmitProjectFormProps
   extends Record<string, string | number | boolean> {
-  //   bgImg: string;
+  bgImg?: string;
   title: string;
   description: string;
   techStack?: string; // e.g., ['Next.js', 'Tailwind']
   tags?: string; // e.g., ['UI', 'Portfolio']
+  defaultValue?: string;
   links?: {
     github?: string;
     demo?: string;

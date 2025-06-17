@@ -41,11 +41,11 @@ export const adminNavItems: NavItem[] = [
     name: "Projects",
     path: root + "/projects",
   },
-  // {
-  //   icon: <FaRegUser />, // <UserCircleIcon />,
-  //   name: "User Profile",
-  //   path: root + "/profile",
-  // },
+  {
+    icon: <FaRegUser />, // <UserCircleIcon />,
+    name: "Add Project",
+    path: root + "/add-project",
+  },
   // {
   //   name: "Forms",
   //   icon: <FaWpforms />, //<GridIcon />,

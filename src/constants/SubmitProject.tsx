@@ -123,7 +123,7 @@ export const ProjectFormFields: FieldProps<SubmitProjectFormProps>[] = [
         name: 'bgImg',
         type: 'url' as const,
         label: 'Image',
-        // required: true,
+        required: true,
         placeholder: 'Project Image',
         validation: {
             required: 'Project image is required',

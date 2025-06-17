@@ -4,7 +4,7 @@ import { ProjectType } from "@/types/project";
 export const createProject = async (projectData: ProjectType) => {
   const { data, error } = await supabase
     .from("projects")
-    .insert([{ ...projectData, status: "pending" }])
+    .insert([{ ...projectData, status: projectData?.status || "pending" }])
     .select(); // Optional: return the inserted record(s)
 
   if (error) {

@@ -1,5 +1,5 @@
 
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import Box from "./Box";
 import Label from "./Label";
 import Button from "./Button";
@@ -19,7 +19,21 @@ export default function Form<T extends Record<string, FieldValue>>({
 
 }: FormProps<T>) {
 
-    const getInitialFormData = (): FormData<T> => {
+    // const getInitialFormData = (): FormData<T> => {
+    //     const initialData = {} as FormData<T>;
+    //     fields.forEach(field => {
+    //         if (field.defaultValue !== undefined) {
+    //             initialData[field.name as keyof T] = field.defaultValue as T[keyof T];
+    //         } else if (field.type === 'checkbox') {
+    //             initialData[field.name as keyof T] = false as T[keyof T];
+    //         } else {
+    //             initialData[field.name as keyof T] = '' as T[keyof T];
+    //         }
+    //     });
+    //     return initialData;
+    // };
+
+    const getInitialFormData = useMemo(() => {
         const initialData = {} as FormData<T>;
         fields.forEach(field => {
             if (field.defaultValue !== undefined) {
@@ -31,7 +45,8 @@ export default function Form<T extends Record<string, FieldValue>>({
             }
         });
         return initialData;
-    };
+    }, [fields]);
+
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
         const target = e.target as HTMLInputElement;
@@ -125,7 +140,7 @@ export default function Form<T extends Record<string, FieldValue>>({
         if (validateForm()) {
             try {
                 await onSubmit(formData);
-                setFormData(getInitialFormData());
+                setFormData(getInitialFormData);
                 setErrors({});
                 setShowPassword({});
             } catch (error) {
@@ -227,6 +242,9 @@ export default function Form<T extends Record<string, FieldValue>>({
 
 
     const [formData, setFormData] = useState<FormData<T>>(getInitialFormData);
+    // const [formData, setFormData] = useState<FormData<T>>(() => getInitialFormData());
+    // const [formData, setFormData] = useState<FormData<T>>(getInitialFormData());
+
     const [errors, setErrors] = useState<Record<string, FieldError>>({});
     const [showPassword, setShowPassword] = useState<Record<string, boolean>>({});
 

@@ -1,50 +1,36 @@
 'use client'
-import { getProjects } from '@/backend/controller/project.controller';
 import { Table } from '@/components/table'
+import { useProjects } from '@/hook/callAPI.tsx/useProjects';
+import { formatTime } from '@/libs/timeConvertion';
+import { useProjectStore } from '@/stores/projects.store';
+import { ProjectType } from '@/types/project';
 import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
 
 export default function Projects() {
     const router = useRouter();
-    const [projectData, setProjectData] = useState([])
+    const { handleGetProjects } = useProjects();
+    const { projects, projectPagination } = useProjectStore()
     const [pageNo, setPageNo] = useState(1);
     const [pageSize] = useState(10)
     const [search] = useState('')
-    const [pageParams, setPageParams] = useState({
-        totalData: 0,
-        totalPages: 0
-    })
-
-
 
 
     useEffect(() => {
-        getProjectData()
+        handleGetProjects(pageNo, pageSize, search)
     }, [pageNo, pageSize])
 
 
-    const getProjectData = async () => {
-        const { projects, totalPages, totalCount } = await getProjects(pageNo, pageSize, search);
-        setProjectData(projects)
-        setPageParams({
-            totalPages, totalData: totalCount
-        })
-
-    }
-
-    const handleRowClick = (data) => {
-        // Assuming data has a project_id property
-        router.push(`/dashboard/projects/${data.id}`);
-
-        // Alternatively, for better type safety:
-        // router.push(`/dashboard/projects/${data.id}`);
+    const handleRowClick = (id: string) => {
+        router.push(`/dashboard/projects/${id}`);
     };
 
-    // const generateRows = () => {
-    //     return projectData?.map(project => ({
-
-    //     }))
-    // }
+    const generateRows = () => {
+        return projects?.map(project => ({
+            ...project,
+            created_at: formatTime(project.created_at || '').relative
+        }))
+    }
 
 
     return (
@@ -54,17 +40,12 @@ export default function Projects() {
             >
                 <Table
                     columns={columns}
-                    data={projectData}
+                    data={generateRows()}
                     paginate={
-                        {
-                            pageSize,
-                            pageNo,
-                            totalData: pageParams.totalData,
-                            totalPage: pageParams.totalPages
-                        }
+                        projectPagination
                     }
                     setPageNo={(pageNo) => setPageNo(pageNo)}
-                    onClickRow={handleRowClick}
+                    onClickRow={(data: ProjectType) => handleRowClick(data.id || '')}
                 />
             </div>
         </>
