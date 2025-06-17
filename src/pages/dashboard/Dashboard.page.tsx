@@ -1,5 +1,7 @@
 "use client";
+// import { supabase } from "@/backend/connection";
 import PageMeta from "@/components/PageMeta";
+// import { useRouter } from "next/navigation";
 // import DemographicCard from "@/components/dashboard/DemographicCard";
 // import EcommerceMetrics from "@/components/dashboard/EcommerceMetrics";
 // import MonthlySalesChart from "@/components/dashboard/MonthlySalesChart";
@@ -9,6 +11,27 @@ import PageMeta from "@/components/PageMeta";
 import React from "react";
 
 export default function Dashboard() {
+  // const router = useRouter()
+  // const [loading, setLoading] = useState(true)
+
+  // useEffect(() => {
+  //   const checkSession = async () => {
+  //     const {
+  //       data: { session },
+  //     } = await supabase.auth.getSession()
+
+  //     if (!session) {
+  //       router.replace('/login')
+  //     } else {
+  //       setLoading(false)
+  //     }
+  //   }
+
+  //   checkSession()
+  // }, [])
+
+  // if (loading) return <div>Loading...</div>
+
   return (
     <>
       <PageMeta

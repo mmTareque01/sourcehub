@@ -9,7 +9,7 @@ import Image from "next/image";
 // import NotificationDropdown from "./NotificationDropdown";
 // import UserDropdown from "./UserDropdown";
 import { useAppSettings } from "@/stores/app-settings-store";
-import { ThemeToggleButton } from "../ThemeToggleButton";
+// import { ThemeToggleButton } from "../ThemeToggleButton";
 
 const AppHeader = () => {
   const [isApplicationMenuOpen, setApplicationMenuOpen] = useState(false);
@@ -45,9 +45,9 @@ const AppHeader = () => {
   }, []);
 
   return (
-    <header className="sticky top-0 flex w-full border-b border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900">
+    <header className="sticky top-0 flex w-full border-b border-gray-200 !bg-white dark:border-gray-800 dark:bg-gray-900 !text-black">
       <div className="flex w-full flex-col items-center justify-between lg:flex-row lg:px-6">
-        <div className="flex w-full items-center justify-between gap-2 border-b border-gray-200 px-3 py-3 dark:border-gray-800 sm:gap-4 lg:justify-normal lg:border-b-0 lg:px-0 lg:py-4">
+        <div className="flex w-full items-center justify-between gap-2 border-b border-gray-200 px-3 py-3  sm:gap-4 lg:justify-normal lg:border-b-0 lg:px-0 lg:py-4">
           {/* Sidebar Toggle Button */}
           <button
             className="z-[99999] flex h-10 w-10 items-center justify-center rounded-lg border-gray-200 text-gray-500 dark:border-gray-800 dark:text-gray-400 lg:h-11 lg:w-11 lg:border"
@@ -108,7 +108,7 @@ const AppHeader = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={toggleApplicationMenu}
-            className="z-[99999] flex h-10 w-10 items-center justify-center rounded-lg text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800 lg:hidden"
+            className="z-[99999]  flex h-10 w-10 items-center justify-center rounded-lg text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800 lg:hidden"
           >
             <svg
               width="24"
@@ -127,7 +127,7 @@ const AppHeader = () => {
           </button>
 
           {/* Search Bar (Desktop) */}
-          <div className="hidden lg:block">
+          {/* <div className="hidden lg:block">
             <div className="relative">
               <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2">
                 <svg
@@ -157,17 +157,28 @@ const AppHeader = () => {
                 <span>K</span>
               </button>
             </div>
-          </div>
+          </div> */}
+
+          <p>
+            Dashboard is under development!
+          </p>
         </div>
 
         {/* Right Side Menu */}
         <div
-          className={`${
-            isApplicationMenuOpen ? "flex" : "hidden"
-          } w-full items-center justify-between gap-4 px-5 py-4 shadow-md lg:flex lg:justify-end lg:px-0 lg:shadow-none`}
+          className={`${isApplicationMenuOpen ? "flex" : "hidden"
+            } w-full items-center justify-between gap-4 px-5 py-4 shadow-md lg:flex lg:justify-end lg:px-0 lg:shadow-none`}
         >
           <div className="flex items-center gap-2 2xsm:gap-3">
-            <ThemeToggleButton />
+            {/* <ThemeToggleButton /> */}
+
+            <Link
+              href={'/'}
+              className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#6b78f0]  text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+              <span className="truncate">Log out</span>
+            </Link>
+
             {/* <NotificationDropdown /> */}
           </div>
           {/* <UserDropdown /> */}
