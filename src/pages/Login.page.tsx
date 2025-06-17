@@ -1,44 +1,44 @@
 "use client";
 
-import Form from "@/components/Form";
-import { FieldProps } from "@/types/Form/form";
+// import Form from "@/components/Form";
+// import { FieldProps } from "@/types/Form/form";
 
 export interface SignInFormValues {
   email: string;
   password: string;
 }
 
-export const SignInFormFields: FieldProps<SignInFormValues>[] = [
-  {
-    name: "email",
-    type: "email",
-    label: "Email Address",
-    required: true,
-    placeholder: "your@email.com",
-    validation: {
-      required: "Email is required",
-      pattern: {
-        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-        message: "Invalid email address",
-      },
-    },
-  },
-  {
-    name: "password",
-    type: "password",
-    label: "Password",
-    required: true,
-    placeholder: "Enter your password",
-    showPasswordToggle: true,
-    validation: {
-      required: "Password is required",
-      minLength: {
-        value: 8,
-        message: "Password must be at least 8 characters",
-      },
-    },
-  },
-];
+// export const SignInFormFields: FieldProps<SignInFormValues>[] = [
+//   {
+//     name: "email",
+//     type: "email",
+//     label: "Email Address",
+//     required: true,
+//     placeholder: "your@email.com",
+//     validation: {
+//       required: "Email is required",
+//       pattern: {
+//         value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+//         message: "Invalid email address",
+//       },
+//     },
+//   },
+//   {
+//     name: "password",
+//     type: "password",
+//     label: "Password",
+//     required: true,
+//     placeholder: "Enter your password",
+//     showPasswordToggle: true,
+//     validation: {
+//       required: "Password is required",
+//       minLength: {
+//         value: 8,
+//         message: "Password must be at least 8 characters",
+//       },
+//     },
+//   },
+// ];
 
 export default function LoginForm() {
     return (
@@ -56,11 +56,11 @@ export default function LoginForm() {
                             {/* <SocialLogin /> */}
                             {/* <OrBorder /> */}
 
-                            <Form<SignInFormValues>
+                            {/* <Form<SignInFormValues>
                                 fields={SignInFormFields}
                                 onSubmit={(data)=>{console.log(data)}}
                                 submitText="Sign In"
-                            />
+                            /> */}
 
          
                         </div>
