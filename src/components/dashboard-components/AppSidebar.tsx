@@ -8,7 +8,6 @@ import { HiDotsHorizontal } from "react-icons/hi"
 ;
 import Navigation from "./navigation/Navigation";
 import { adminNavItems } from "@/constants/nav";
-import SidebarWidget from "./SidebarWidget";
 
 
 
@@ -103,7 +102,7 @@ const AppSidebar = () => {
             </div> */}
           </div>
         </nav>
-        {expandedSidebar || isHovered || isMobileOpen ? <SidebarWidget /> : null}
+        {/* {expandedSidebar || isHovered || isMobileOpen ? <SidebarWidget /> : null} */}
       </div>
     </aside>
   );

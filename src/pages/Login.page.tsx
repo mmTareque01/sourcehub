@@ -1,4 +1,4 @@
-export default function Login({ login }: { login: (form:FormData) => void }) {
+export default function Login({ login }: { login: (form: FormData) => void }) {
 
 
   return (
