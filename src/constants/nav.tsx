@@ -39,7 +39,11 @@ export const adminNavItems: NavItem[] = [
   {
     icon: <TbUsers />, // <UserCircleIcon />,
     name: "Projects",
-    path: root + "/projects",
+    // path: root + "/projects",
+    subItems: [
+      { name: "Active Projects", path: root + "/projects", pro: false },
+      { name: "Submitted Projects", path: root + "/projects/submitted-projects", pro: false }
+    ],
   },
   {
     icon: <FaRegUser />, // <UserCircleIcon />,

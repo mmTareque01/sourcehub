@@ -9,10 +9,10 @@ import { updateProjectById } from "@/backend/controller/updateProject.controller
 export function useProjects() {
   const { setProjects, setProject, setProjectPagination } = useProjectStore();
 
-  const handleGetProjects = async (pageNo: number = 1, pageSize: number = 10, search: string = '') => {
+  const handleGetProjects = async (pageNo: number = 1, pageSize: number = 10, search: string = '', status: string = 'active') => {
 
     try {
-      const { projects, totalCount, totalPages } = await getProjects(pageNo, pageSize, search)
+      const { projects, totalCount, totalPages } = await getProjects(pageNo, pageSize, search, 'created_at', false, status)
 
       setProjects(projects)
       setProjectPagination({
@@ -32,6 +32,7 @@ export function useProjects() {
   const handleGetProjectById = async (id: string) => {
     try {
       const projects = await getProjectById(id)
+      console.log({projects})
       setProject(projects)
       return true;
     }
@@ -53,7 +54,7 @@ export function useProjects() {
 
     try {
       const newsletterTypes = await updateProjectById(id, data)
-      console.log({newsletterTypes})
+      console.log({ newsletterTypes })
       return newsletterTypes;
     }
     catch (error) {
