@@ -1,119 +1,75 @@
-"use client";
+export default function Login({ login }: { login: (form:FormData) => void }) {
 
-// // import Form from "@/components/Form";
-// // import { FieldProps } from "@/types/Form/form";
-
-// export interface SignInFormValues {
-//   email: string;
-//   password: string;
-// }
-
-// // export const SignInFormFields: FieldProps<SignInFormValues>[] = [
-// //   {
-// //     name: "email",
-// //     type: "email",
-// //     label: "Email Address",
-// //     required: true,
-// //     placeholder: "your@email.com",
-// //     validation: {
-// //       required: "Email is required",
-// //       pattern: {
-// //         value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-// //         message: "Invalid email address",
-// //       },
-// //     },
-// //   },
-// //   {
-// //     name: "password",
-// //     type: "password",
-// //     label: "Password",
-// //     required: true,
-// //     placeholder: "Enter your password",
-// //     showPasswordToggle: true,
-// //     validation: {
-// //       required: "Password is required",
-// //       minLength: {
-// //         value: 8,
-// //         message: "Password must be at least 8 characters",
-// //       },
-// //     },
-// //   },
-// // ];
-
-// export default function LoginForm() {
-//     return (
-//         <div className="flex items-center justify-center min-h-screen bg-gray-100">
-//             <div className="flex flex-col max-w-[500px] bg-white  p-5 rounded-2xl  shadow-lg">
-//                 {/* <GoBack/> */}
-//                 <div className="flex flex-col justify-center flex-1 w-full max-w-md mx-auto">
-//                     <div>
-//                         {/* <GenerateUI
-//                             UIComponents={SignInTitle}
-//                             wrapperComponent={"div"}
-//                             wrapperClassName="mb-5 sm:mb-8"
-//                         /> */}
-//                         <div>
-//                             {/* <SocialLogin /> */}
-//                             {/* <OrBorder /> */}
-
-//                             {/* <Form<SignInFormValues>
-//                                 fields={SignInFormFields}
-//                                 onSubmit={(data)=>{console.log(data)}}
-//                                 submitText="Sign In"
-//                             /> */}
-
-         
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// }
-
-
-import { useState } from 'react'
-import { supabase } from '@/backend/connection'
-import { useRouter } from 'next/navigation';
-
-export default function Login() {
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-  const router = useRouter()
-
-  const handleLogin = async () => {
-    const { error } = await supabase.auth.signInWithPassword({
-      email,
-      password,
-    })
-
-    if (error) {
-      alert(error.message)
-    } else {
-      router.push('/dashboard')
-    }
-  }
 
   return (
-    <div className="p-4">
-      <h2 className="text-xl mb-2">Login</h2>
-      <input
-        type="email"
-        value={email}
-        onChange={e => setEmail(e.target.value)}
-        placeholder="Email"
-        className="border p-2 mb-2 w-full"
-      />
-      <input
-        type="password"
-        value={password}
-        onChange={e => setPassword(e.target.value)}
-        placeholder="Password"
-        className="border p-2 mb-2 w-full"
-      />
-      <button onClick={handleLogin} className="bg-blue-500 text-white px-4 py-2 rounded">
-        Login
-      </button>
+    <div className="min-h-screen flex items-center justify-center">
+      <div className="border-amber-300 border-2 p-8 rounded-lg shadow-md w-full max-w-md">
+        <div className="text-center mb-8">
+          <h1 className="text-3xl font-bold ">Welcome Back</h1>
+          <p className=" mt-2">Admin Login</p>
+        </div>
+
+        <form className="space-y-6">
+          <div>
+            <label htmlFor="email" className="block text-sm font-medium  mb-1">
+              Email Address
+            </label>
+            <input
+              id="email"
+              type="email"
+              // value={email}
+              // onChange={e => setEmail(e.target.value)}
+              placeholder="you@example.com"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
+              required
+            />
+          </div>
+
+          <div>
+            <label htmlFor="password" className="block text-sm font-medium  mb-1">
+              Password
+            </label>
+            <input
+              id="password"
+              type="password"
+              // value={password}
+              // onChange={e => setPassword(e.target.value)}
+              placeholder="••••••••"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
+              required
+            />
+          </div>
+
+          {/* <div className="flex items-center justify-between">
+            <div className="flex items-center">
+              <input
+                id="remember-me"
+                name="remember-me"
+                type="checkbox"
+                className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+              />
+              <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-700">
+                Remember me
+              </label>
+            </div>
+
+            <div className="text-sm">
+              <a href="#" className="font-medium text-blue-600 hover:text-blue-500">
+                Forgot password?
+              </a>
+            </div>
+          </div> */}
+
+          <button
+            type="submit"
+            formAction={login}
+            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition"
+          >
+            Sign in
+          </button>
+        </form>
+
+      </div>
     </div>
   )
 }

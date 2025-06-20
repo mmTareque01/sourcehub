@@ -4,6 +4,11 @@ import "../../style/globals.css";
 import AppSidebar from "@/components/dashboard-components/AppSidebar";
 import Backdrop from "@/components/dashboard-components/Backdrop";
 import AppHeader from "@/components/dashboard-components/AppHeader";
+// import { supabase } from "@/backend/connection";
+import { redirect } from "next/navigation";
+// import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
+// import { cookies } from 'next/headers'
+import { createClient } from "@/libs/supabse/server";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,12 +29,29 @@ export const metadata: Metadata = {
   description: "Discover Open Source SaaS Projects",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  // const { data: { session } } = await supabase.auth.getSession()
+  // const supabase = createServerComponentClient({ cookies })
+  // const { data: { session } } = await supabase.auth.getSession()
+  // if (!session) {
+  //   redirect('/login')
+  // }
+
+
+  const supabase = await createClient()
+  const { data, error } = await supabase.auth.getUser()
+  if (error || !data?.user) {
+    redirect('/login')
+  }
+
+
   return (
+
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${notoSans.variable} antialiased`}
