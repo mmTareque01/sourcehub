@@ -15,7 +15,7 @@ type AppSettings = {
   toggleTheme: () => void;
   setLanguage: (language: Language) => void;
   toggleNotifications: () => void;
-  toggleSidebar: () => void;
+  toggleSidebar: (value:boolean) => void;
   resetSettings: () => void;
 };
 

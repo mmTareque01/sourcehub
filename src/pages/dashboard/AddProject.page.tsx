@@ -56,7 +56,7 @@ export default function AddProject() {
             <Head>
                 <title>Add Project | Open Source Projects</title>
             </Head>
-            <main className="max-w-2xl mx-auto py-10 px-4">
+            <main className="max-w-2xl mx-auto py-10 px-4 bg-white shadow-lg rounded-2xl">
                 <Title>Add New Open Source Project</Title>
 
 

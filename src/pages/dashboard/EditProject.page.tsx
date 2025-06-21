@@ -138,22 +138,28 @@ export default function EditProject({ projectId }: { projectId: string }) {
 
     return (
         <>
-            <Title>Update Project</Title>
-            <Form<SubmitProjectFormProps>
-                // fields={getFormFieldsWithDefaults(project as SubmitProjectFormProps)}
-                fields={fields}
-                onSubmit={(data) => {
-                    console.log('logging')
-                    handleSubmit(data as SubmitProjectFormProps)
-                }}
-                submitText='Update Project'
-            // submitClassName="bg-blue-600  px-6 py-2 rounded hover:bg-blue-700 transition"
-            // loading={loading}
-            />
+            <div
+                className='bg-white shadow-lg rounded-2xl p-5'
+            >
+                <Title>Update Project</Title>
+                <Form<SubmitProjectFormProps>
+                    // fields={getFormFieldsWithDefaults(project as SubmitProjectFormProps)}
+                    fields={fields}
+                    onSubmit={(data) => {
+                        console.log('logging')
+                        handleSubmit(data as SubmitProjectFormProps)
+                    }}
+                    submitText='Update Project'
+                // submitClassName="bg-blue-600  px-6 py-2 rounded hover:bg-blue-700 transition"
+                // loading={loading}
+                />
 
-            {submitted && (
-                <p className="text-green-600 mb-4">✅ Your project has been updated successfully!</p>
-            )}
+                {submitted && (
+                    <p className="text-green-600 mb-4">✅ Your project has been updated successfully!</p>
+                )}
+
+            </div>
+
         </>
     )
 }

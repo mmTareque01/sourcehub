@@ -23,7 +23,9 @@ export default function Navigation({
 
   const { expandedSidebar } = useAppSettings();
   const pathname = usePathname();
+  console.log({pathname})
   const isActive = useCallback((path: string) => pathname === path, [pathname]);
+  console.log({isActive})
   const subMenuRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
   const handleSubmenuToggle = (index: number, menuType: "main" | "others") => {
@@ -51,29 +53,28 @@ export default function Navigation({
     }
   }, [openSubmenu]);
 
-  // useEffect(() => {
-  //   let submenuMatched = false;
-  //   ["main", "others"].forEach((menuType) => {
-  //     const items = menuType === "main" ? navItems : othersItems;
-  //     items.forEach((nav, index) => {
-  //       if (nav.subItems) {
-  //         nav.subItems.forEach((subItem) => {
-  //           if (isActive(subItem.path)) {
-  //             setOpenSubmenu({
-  //               type: menuType as "main" | "others",
-  //               index,
-  //             });
-  //             submenuMatched = true;
-  //           }
-  //         });
-  //       }
-  //     });
-  //   });
+  useEffect(() => {
+    let submenuMatched = false;
+    ["main"].forEach((menuType) => {
+      items.forEach((nav, index) => {
+        if (nav.subItems) {
+          nav.subItems.forEach((subItem) => {
+            if (isActive(subItem.path)) {
+              setOpenSubmenu({
+                type: menuType as "main" | "others",
+                index,
+              });
+              submenuMatched = true;
+            }
+          });
+        }
+      });
+    });
 
-  //   if (!submenuMatched) {
-  //     setOpenSubmenu(null);
-  //   }
-  // }, [pathname, isActive]);
+    if (!submenuMatched) {
+      setOpenSubmenu(null);
+    }
+  }, [pathname, isActive]);
 
   return (
     <ul className="flex flex-col gap-4">

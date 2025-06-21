@@ -56,17 +56,17 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${notoSans.variable} antialiased`}
       >
-        <div className="min-h-screen xl:flex bg-[#e9eef3] text-gray-800 placeholder:text-gray-600">
+        <div className="min-h-screen xl:flex bg-[#F9FAFB] text-gray-800 placeholder:text-gray-600">
           <div>
             <AppSidebar />
             <Backdrop />
           </div>
 
           <div
-            className={`flex-1 lg:ml-[290px] transition-all duration-300 ease-in-out`}
+            className={`flex-1 lg:ml-[245px] transition-all duration-300 ease-in-out`}
           >
             <AppHeader />
-            <div className="p-2 mx-auto max-w-screen-2xl md:p-4 ">
+            <div className="p-4 mx-auto max-w-screen-2xl md:p-6 bg-[#F9FAFB]">
               {children}
             </div>
           </div>
