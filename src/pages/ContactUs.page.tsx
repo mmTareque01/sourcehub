@@ -40,21 +40,23 @@ export default function ContactUs() {
         }
     };
     return (
-        <div className="max-w-md mx-auto p-8">
-            <h1 className="text-3xl mb-6 font-bold">Contact Us</h1>
-            <Form<ContactUsFormProps>
-                fields={ContactUsFormFields}
-                submitText="Send"
-                onSubmit={(data) => {
-                    if (data) {
-                        handleSubmit(data as ContactUsFormProps)
-                    }
-                }}
-                loading={status === 'loading'}
-            />
+        <div className="flex items-center justify-center min-h-screen">
+            <div className="max-w-md w-full mx-auto p-8 rounded-lg shadow-lg bg-[#192d42]">
+                <h1 className="text-3xl mb-6 font-bold">Contact Us</h1>
+                <Form<ContactUsFormProps>
+                    fields={ContactUsFormFields}
+                    submitText="Send"
+                    onSubmit={(data) => {
+                        if (data) {
+                            handleSubmit(data as ContactUsFormProps)
+                        }
+                    }}
+                    loading={status === 'loading'}
+                />
 
-            {status === "success" && <p className="text-green-600">Message sent successfully!</p>}
-            {status === "error" && <p className="text-red-600">Failed to send message.</p>}
+                {status === "success" && <p className="text-green-600">Message sent successfully!</p>}
+                {status === "error" && <p className="text-red-600">Failed to send message.</p>}
+            </div>
         </div>
     )
 }

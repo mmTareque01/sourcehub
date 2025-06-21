@@ -5,7 +5,8 @@ export const getProjects = async (
   limit: number,
   q: string,
   orderBy: string = "created_at",
-  ascending: boolean = false
+  ascending: boolean = false,
+  status: string = "active"
 ) => {
   const from = (page - 1) * limit;
   const to = from + limit - 1;
@@ -15,7 +16,7 @@ export const getProjects = async (
     .from("projects")
     .select("*", { count: "exact" })
     .order(orderBy, { ascending })
-    .eq('status', 'active')
+    .eq("status", status)
     .range(from, to);
 
   if (q && q.trim() !== "") {
@@ -29,7 +30,6 @@ export const getProjects = async (
   if (error) {
     // console.error("Error fetching projects:", error);
     throw new Error("Failed to fetch projects");
-    
   }
 
   return {

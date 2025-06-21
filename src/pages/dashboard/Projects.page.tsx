@@ -7,7 +7,7 @@ import { ProjectType } from '@/types/project';
 import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
 
-export default function Projects() {
+export default function Projects({ type = 'active' }: { type?: string }) {
     const router = useRouter();
     const { handleGetProjects } = useProjects();
     const { projects, projectPagination } = useProjectStore()
@@ -17,7 +17,7 @@ export default function Projects() {
 
 
     useEffect(() => {
-        handleGetProjects(pageNo, pageSize, search)
+        handleGetProjects(pageNo, pageSize, search, type)
     }, [pageNo, pageSize])
 
 
