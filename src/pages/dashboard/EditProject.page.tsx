@@ -1,6 +1,5 @@
 import Loading from '@/app/loading'
 import Form from '@/components/Form'
-import Title from '@/components/Title'
 import { ProjectFormFields } from '@/constants/SubmitProject'
 import { useProjects } from '@/hook/callAPI.tsx/useProjects'
 import { stringToarray } from '@/libs/string2Array'
@@ -135,7 +134,9 @@ export default function EditProject({ projectId }: { projectId: string }) {
     }, [project?.id, apiSuccess]); // Only run when project.id is available
     React.useEffect(() => {
         setHeader(
-            <Title>Update Project</Title>
+            <p className="text-2xl font-bold capitalize">
+               Update Project
+            </p>
         )
     }, [])
 
@@ -147,7 +148,7 @@ export default function EditProject({ projectId }: { projectId: string }) {
             <div
                 className='bg-white shadow-lg rounded-2xl p-5'
             >
-
+               
                 <Form<SubmitProjectFormProps>
                     // fields={getFormFieldsWithDefaults(project as SubmitProjectFormProps)}
                     fields={fields}

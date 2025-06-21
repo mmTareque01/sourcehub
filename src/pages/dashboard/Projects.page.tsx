@@ -1,4 +1,5 @@
 'use client'
+import Search from '@/components/dashboard-components/Search';
 import { Table } from '@/components/table'
 import { useProjects } from '@/hook/callAPI.tsx/useProjects';
 import { formatTime } from '@/libs/timeConvertion';
@@ -36,9 +37,7 @@ export default function Projects({ type = 'active' }: { type?: string }) {
 
     React.useEffect(() => {
         setHeader(
-            <p className="text-2xl font-bold capitalize">
-                Projects
-            </p>
+         <Search/>
         )
     }, [])
     return (
