@@ -88,14 +88,17 @@ export default function Table<T extends Record<string, unknown>>({
         </tbody>
       </table>
 
-      <Pagination
-        from={from}
-        to={to}
-        total={paginate?.totalData}
-        totalPage={paginate?.totalPage}
-        currentPage={paginate?.pageNo}
-        handleClick={setPageNo ? (page: number) => setPageNo(page) : () => { }}
-      />
+      {
+        paginate?.totalPage > 1 && <Pagination
+          from={from}
+          to={to}
+          total={paginate?.totalData}
+          totalPage={paginate?.totalPage}
+          currentPage={paginate?.pageNo}
+          handleClick={setPageNo ? (page: number) => setPageNo(page) : () => { }}
+        />
+      }
+
     </div>
   );
 }

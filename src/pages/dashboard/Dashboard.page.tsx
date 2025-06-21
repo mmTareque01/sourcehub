@@ -2,6 +2,7 @@
 import ProjectMetrics from "@/components/dashboard-components/ProjectMatrix";
 import PageMeta from "@/components/PageMeta";
 import VisitorStatsGraph, { TimeRange, VisitorData } from "@/components/VisitorsGrowthGraph";
+import { useAppStore } from "@/stores/app.store";
 import React, { useState } from "react";
 
 
@@ -52,6 +53,7 @@ const calculatePercentageChange = (data: VisitorData[]): number => {
 
 export default function Dashboard() {
 
+  const { setHeader } = useAppStore();
   const [timeRange, setTimeRange] = useState<TimeRange>('30d');
   const [visitorData, setVisitorData] = useState<VisitorData[]>([]);
   const [percentageChange, setPercentageChange] = useState(0);
@@ -63,6 +65,14 @@ export default function Dashboard() {
     setPercentageChange(calculatePercentageChange(data));
   }, [timeRange]);
 
+
+  React.useEffect(()=>{
+    setHeader(
+      <p className="text-2xl font-bold capitalize">
+        admin panel
+      </p>
+    )
+  },[])
 
   return (
     <>

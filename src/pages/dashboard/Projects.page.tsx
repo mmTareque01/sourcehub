@@ -1,7 +1,9 @@
 'use client'
+import Search from '@/components/dashboard-components/Search';
 import { Table } from '@/components/table'
 import { useProjects } from '@/hook/callAPI.tsx/useProjects';
 import { formatTime } from '@/libs/timeConvertion';
+import { useAppStore } from '@/stores/app.store';
 import { useProjectStore } from '@/stores/projects.store';
 import { ProjectType } from '@/types/project';
 import { useRouter } from 'next/navigation';
@@ -12,8 +14,9 @@ export default function Projects({ type = 'active' }: { type?: string }) {
     const { handleGetProjects } = useProjects();
     const { projects, projectPagination } = useProjectStore()
     const [pageNo, setPageNo] = useState(1);
-    const [pageSize] = useState(10)
+    const [pageSize] = useState(25)
     const [search] = useState('')
+    const { setHeader } = useAppStore();
 
 
     useEffect(() => {
@@ -32,7 +35,11 @@ export default function Projects({ type = 'active' }: { type?: string }) {
         }))
     }
 
-
+    React.useEffect(() => {
+        setHeader(
+         <Search/>
+        )
+    }, [])
     return (
         <>
             <div
