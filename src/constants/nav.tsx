@@ -1,10 +1,10 @@
 
 import { ReactNode } from "react";
-import { FaRegUser } from "react-icons/fa";
+import { AiOutlineProject } from "react-icons/ai";
 import { FiPieChart } from "react-icons/fi";
-// import { IoMailOutline } from "react-icons/io5";
 import { LuLayoutDashboard, LuMails, LuPlug } from "react-icons/lu";
-import { TbCubePlus, TbUsers } from "react-icons/tb";
+import { MdAddRoad } from "react-icons/md";
+import { TbCubePlus } from "react-icons/tb";
 
 export type NavItem = {
   name: string;
@@ -37,7 +37,7 @@ export const adminNavItems: NavItem[] = [
     path: root + "/import-projects",
   },
   {
-    icon: <TbUsers />, // <UserCircleIcon />,
+    icon: <AiOutlineProject />, // <UserCircleIcon />,
     name: "Projects",
     // path: root + "/projects",
     subItems: [
@@ -46,7 +46,7 @@ export const adminNavItems: NavItem[] = [
     ],
   },
   {
-    icon: <FaRegUser />, // <UserCircleIcon />,
+    icon: <MdAddRoad />, // <UserCircleIcon />,
     name: "Add Project",
     path: root + "/add-project",
   },

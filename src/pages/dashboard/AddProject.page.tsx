@@ -7,8 +7,10 @@ import { SubmitProjectFormProps } from '@/types/Form/SubmitProject.form'
 import { ProjectFormFields } from '@/constants/SubmitProject'
 import { createProject } from '@/backend/controller/createProject.controller'
 import { stringToarray } from '@/libs/string2Array'
+import { useAppStore } from '@/stores/app.store'
 
 export default function AddProject() {
+     const { setHeader } = useAppStore();
     const [loading, setLoading] = useState(false);
     const [submitted, setSubmitted] = useState(false);
 
@@ -50,6 +52,13 @@ export default function AddProject() {
         }
     };
 
+      React.useEffect(()=>{
+    setHeader(
+      <p className="text-2xl font-bold capitalize">
+        add new project
+      </p>
+    )
+  },[])
     return (
         <div>
 

@@ -4,6 +4,7 @@ import Title from '@/components/Title'
 import { ProjectFormFields } from '@/constants/SubmitProject'
 import { useProjects } from '@/hook/callAPI.tsx/useProjects'
 import { stringToarray } from '@/libs/string2Array'
+import { useAppStore } from '@/stores/app.store'
 import { useProjectStore } from '@/stores/projects.store'
 import { FieldProps } from '@/types/Form/form'
 import { SubmitProjectFormProps } from '@/types/Form/SubmitProject.form'
@@ -11,6 +12,7 @@ import { ProjectType } from '@/types/project'
 import React, { useEffect, useState } from 'react'
 
 export default function EditProject({ projectId }: { projectId: string }) {
+    const { setHeader } = useAppStore();
     const [loading, setLoading] = useState(false);
     const [submitted] = useState(false);
     const [fields, setFields] = useState<FieldProps<SubmitProjectFormProps>[]>([]);
@@ -131,7 +133,11 @@ export default function EditProject({ projectId }: { projectId: string }) {
             setLoading(false);
         }
     }, [project?.id, apiSuccess]); // Only run when project.id is available
-
+    React.useEffect(() => {
+        setHeader(
+            <Title>Update Project</Title>
+        )
+    }, [])
 
     if (!project.id || loading) return (<Loading />)
 
@@ -141,7 +147,7 @@ export default function EditProject({ projectId }: { projectId: string }) {
             <div
                 className='bg-white shadow-lg rounded-2xl p-5'
             >
-                <Title>Update Project</Title>
+
                 <Form<SubmitProjectFormProps>
                     // fields={getFormFieldsWithDefaults(project as SubmitProjectFormProps)}
                     fields={fields}

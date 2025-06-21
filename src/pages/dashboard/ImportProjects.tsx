@@ -1,26 +1,28 @@
 'use client'
 import Loading from '@/app/loading';
 import { createBulkProject } from '@/backend/controller/createProject.controller';
+import { useAppStore } from '@/stores/app.store';
 import React, { useRef, useState } from 'react';
 import { FiDownload } from 'react-icons/fi';
 
 // Sample template structure
 const sampleProjectTemplate = [
-  {
-    "bgImg": "https://res.cloudinary.com/dehehgtez/image/upload/v1748705985/Screenshot2025-05-31at9.34.31P_qqiqlf.jpg",
-    "title": "AI powered blog app",
-    "description": "Write smarter, not harder! Our AI-powered blog app helps you generate, edit, and optimize content effortlessly. With intelligent suggestions, SEO enhancements, and automated drafting, creating engaging blog posts has never been easier. Perfect for writers, marketers, and businesses looking to boost productivity and quality. 🚀✍️",
-    "techStack": ["MERN", "MongoDB", "Express", "React", "Node JS"],
-    "tags": ["AI", "Blog", "Next.js", "Tailwind CSS"],
-    "links": {
-      "github": "",
-      "demo": "https://quickblog-gs.vercel.app/",
-      "youtube": "https://www.youtube.com/watch?v=yl9pwazDHUw"
+    {
+        "bgImg": "https://res.cloudinary.com/dehehgtez/image/upload/v1748705985/Screenshot2025-05-31at9.34.31P_qqiqlf.jpg",
+        "title": "AI powered blog app",
+        "description": "Write smarter, not harder! Our AI-powered blog app helps you generate, edit, and optimize content effortlessly. With intelligent suggestions, SEO enhancements, and automated drafting, creating engaging blog posts has never been easier. Perfect for writers, marketers, and businesses looking to boost productivity and quality. 🚀✍️",
+        "techStack": ["MERN", "MongoDB", "Express", "React", "Node JS"],
+        "tags": ["AI", "Blog", "Next.js", "Tailwind CSS"],
+        "links": {
+            "github": "",
+            "demo": "https://quickblog-gs.vercel.app/",
+            "youtube": "https://www.youtube.com/watch?v=yl9pwazDHUw"
+        }
     }
-  }
 ];
 
 export default function ImportProjects() {
+    const { setHeader } = useAppStore();
     const fileInputRef = useRef<HTMLInputElement>(null);
     const [loading, setLoading] = useState(false);
 
@@ -76,17 +78,19 @@ export default function ImportProjects() {
         }
     };
 
+    React.useEffect(() => {
+        setHeader(
+            <p className="text-2xl font-bold capitalize">
+                import projects
+            </p>
+        )
+    }, [])
+
     return (
         <>
             {loading && <Loading clientComponent />}
             <div className="rounded-2xl shadow-lg relative flex size-full  flex-col bg-white justify-between group/design-root overflow-x-hidden">
                 <div>
-                    <div className="flex items-center bg-white p-4 pb-2 justify-between">
-                        <h2 className="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12 pr-12">
-                            Import Projects
-                        </h2>
-                    </div>
-                    
                     <div className="flex flex-col p-4 gap-4">
                         <div className="flex justify-between items-center">
                             <p className="text-[#111418] text-base font-normal leading-normal">
@@ -128,8 +132,6 @@ export default function ImportProjects() {
                         </div>
                     </div>
                 </div>
-                
-
             </div>
         </>
     );
