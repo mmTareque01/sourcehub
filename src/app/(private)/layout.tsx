@@ -63,7 +63,7 @@ export default async function RootLayout({
           </div>
 
           <div
-            className={`flex-1 lg:ml-[245px] transition-all duration-300 ease-in-out`}
+            className={`flex-1 lg:ml-[240px] transition-all duration-300 ease-in-out`}
           >
             <AppHeader />
             <div className="p-4 mx-auto max-w-screen-2xl md:p-6 bg-[#F9FAFB]">
