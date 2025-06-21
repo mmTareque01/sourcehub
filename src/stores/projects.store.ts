@@ -24,6 +24,9 @@ export const useProjectStore = create<ProjectState>((set, get) => ({
     bgImg: "",
     created_at: "",
     id: "",
+    links: {
+      github: "",
+    },
   },
   projectPagination: {} as PaginationParams,
   setProject: (types) => set({ project: types }),

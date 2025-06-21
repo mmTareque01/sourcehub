@@ -52,29 +52,31 @@ export default function SubmitProjects() {
 
     return (
         <>
-            <Head>
-                <title>Submit Project | Open Source Projects</title>
-            </Head>
+            <div className='my-5 max-w-2xl w-full mx-auto p-8 rounded-lg shadow-lg bg-[#192d42]'>
+                <Head>
+                    <title>Submit Project | Open Source Projects</title>
+                </Head>
 
-            <main className="max-w-2xl mx-auto py-10 px-4">
-                <Title>Submit Your Open Source Project</Title>
+                <main className=" mx-auto">
+                    <Title >Submit Your Open Source Project</Title>
 
 
-                <Form<SubmitProjectFormProps>
-                    fields={SubmitProjectFormFields}
-                    onSubmit={(data) => {
-                        // console.log(data)
-                        handleSubmit(data as SubmitProjectFormProps)
-                    }}
-                    submitText='Submit Project'
-                    submitClassName="bg-blue-600  px-6 py-2 rounded hover:bg-blue-700 transition"
-                    loading={loading}
-                />
+                    <Form<SubmitProjectFormProps>
+                        fields={SubmitProjectFormFields}
+                        onSubmit={(data) => {
+                            // console.log(data)
+                            handleSubmit(data as SubmitProjectFormProps)
+                        }}
+                        submitText='Submit Project'
+                        submitClassName="bg-blue-600  px-6 py-2 rounded hover:bg-blue-700 transition"
+                        loading={loading}
+                    />
 
-                {submitted && (
-                    <p className="text-green-600 mb-4">✅ Your project has been submitted successfully!</p>
-                )}
-            </main>
+                    {submitted && (
+                        <p className="text-green-600 mb-4">✅ Your project has been submitted successfully!</p>
+                    )}
+                </main>
+            </div>
         </>
     )
 }
