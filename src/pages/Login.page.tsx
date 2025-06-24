@@ -17,6 +17,7 @@ export default function Login({ login }: { login: (form: FormData) => void }) {
             <input
               id="email"
               type="email"
+              name="email"
               // value={email}
               // onChange={e => setEmail(e.target.value)}
               placeholder="you@example.com"
@@ -32,6 +33,7 @@ export default function Login({ login }: { login: (form: FormData) => void }) {
             <input
               id="password"
               type="password"
+              name="password"
               // value={password}
               // onChange={e => setPassword(e.target.value)}
               placeholder="••••••••"
