@@ -29,7 +29,13 @@ export const getProjects = async (
 
   if (error) {
     // console.error("Error fetching projects:", error);
-    throw new Error("Failed to fetch projects");
+    // throw new Error("Failed to fetch projects");
+  return {
+    projects:  [],
+    totalCount: count || 0,
+    totalPages: count ? Math.ceil(count / limit) : 0,
+    searchQuery: q,
+  };
   }
 
   return {
