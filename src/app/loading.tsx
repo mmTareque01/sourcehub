@@ -28,7 +28,7 @@ export default function Loading({ clientComponent = false }: { clientComponent?:
                             d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
                         ></path>
                     </svg>
-                    <span className="text-gray-800 font-medium text-lg">Processing data...</span>
+                    <span className="text-gray-800 font-medium text-lg">Retriving data...</span>
                 </div>
             </div>
         )

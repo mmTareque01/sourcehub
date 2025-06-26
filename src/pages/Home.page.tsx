@@ -1,7 +1,5 @@
-import { getProjects } from "@/backend/controller/project.controller";
-import Card from "@/components/Card";
 import Hero from "@/components/Hero";
-import Pagination from "@/components/Pagination";
+import ProjectsList from "@/components/ProjectsList";
 import Wrapper from "@/components/Wrapper";
 
 
@@ -11,7 +9,6 @@ import Wrapper from "@/components/Wrapper";
 
 export default async function HomePage({ page = 1, q = '' }: { page?: number, q?: string }) {
   const pageSize = 10; // items per page
-  const { projects, totalPages } = await getProjects(page, pageSize, q);
 
   return (
     <Wrapper>
@@ -27,17 +24,9 @@ export default async function HomePage({ page = 1, q = '' }: { page?: number, q?
 
           </div>
 
-          {
-            projects?.map((project, index) => (
-              <Card key={index} {...project} />
-            ))
-          }
 
-          <Pagination
-            currentPage={page}
-            totalPages={totalPages}
-            getPageLink={(page) => `/?page=${page}&q=${q}`}
-          />
+
+          <ProjectsList page={page} q={q} pageSize={pageSize} />
 
         </div>
       </div>

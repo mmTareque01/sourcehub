@@ -1,6 +1,5 @@
 import HomePage from "@/pages/Home.page";
-import { Suspense } from "react";
-import Loading from "../loading";
+
 
 
 export default async function Home({ searchParams }: {
@@ -13,10 +12,10 @@ export default async function Home({ searchParams }: {
   return (
     <>
       {/* <HomePage page={page} q={q||''}/> */}
-
-      <Suspense fallback={<Loading />}>
+      <HomePage page={page} q={search || ''} />
+      {/* <Suspense fallback={<Loading />}>
         <HomePage page={page} q={search || ''} />
-      </Suspense>
+      </Suspense> */}
     </>
   );
 }
