@@ -16,7 +16,8 @@ export default function Hero() {
                         <h1
                             className=" text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
                         >
-                            Discover Open Source SaaS Projects
+                           {/* {" Discover Open Source SaaS Projects"} */}
+                           {"Discover High-Quality Open Source Projects with Source Code"}
                         </h1>
                         <h2 className=" text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
                             Explore a curated list of publicly available SaaS projects with source code, tutorials, and resources to help you learn and build.

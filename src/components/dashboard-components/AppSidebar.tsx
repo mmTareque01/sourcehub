@@ -41,6 +41,7 @@ const AppSidebar = () => {
                 width={150}
                 height={40}
                 priority
+                loading="lazy"
               />
               <Image
                 className="hidden dark:block"
@@ -49,6 +50,7 @@ const AppSidebar = () => {
                 width={150}
                 height={40}
                 priority
+                loading="lazy"
               />
             </>
           ) : (
@@ -58,6 +60,7 @@ const AppSidebar = () => {
               width={32}
               height={32}
               priority
+              loading="lazy"
             />
           )}
         </Link>

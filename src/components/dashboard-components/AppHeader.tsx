@@ -94,6 +94,7 @@ const AppHeader = () => {
               width={120}
               height={40}
               className="dark:hidden"
+              loading="lazy"
             />
             <Image
               src="/images/logo/logo-dark.svg"
@@ -101,6 +102,7 @@ const AppHeader = () => {
               width={120}
               height={40}
               className="hidden dark:block"
+              loading="lazy"
             />
           </Link>
 

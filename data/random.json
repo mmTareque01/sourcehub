@@ -1,0 +1,3480 @@
+[
+  {
+    "bgImg": "",
+    "title": "Open-source scheduling and booking platform.",
+    "description": "The open source Calendly successor. You are in charge of your own data, workflow, and appearance. Calendly and other scheduling tools are awesome. It made our lives massively easier. We're using it for business meetings, seminars, yoga classes, and even calls with our families. However, most tools are very limited in terms of control and customization. That's where Cal.com comes in. Self-hosted or hosted by us. White-label by design. API-driven and ready to be deployed on your own domain. Full control of your events and data.",
+    "techStack": ["Node.js", "React", "PostgreSQL"],
+    "tags": ["Scheduling", "Booking", "MicroSaaS"],
+    "links": {
+      "github": "https://github.com/calcom/cal.com",
+      "demo": "",
+      "youtube": "",
+      "web": "https://cal.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Plausible Analytics",
+    "description": "Lightweight, privacy-friendly web analytics.",
+    "techStack": ["Go", "JavaScript", "Vue.js"],
+    "tags": ["Analytics", "Privacy"],
+    "links": {
+      "github": "https://github.com/plausible/analytics",
+      "demo": "",
+      "youtube": "",
+      "web": "https://plausible.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Uptime Kuma",
+    "description": "Self-hosted uptime monitoring and alerting.",
+    "techStack": ["Node.js", "Vue.js", "SQLite"],
+    "tags": ["Monitoring", "Alerts"],
+    "links": {
+      "github": "https://github.com/louislam/uptime-kuma",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Directus",
+    "description": "Headless CMS that turns SQL database into API.",
+    "techStack": ["Node.js", "Vue.js", "MySQL"],
+    "tags": ["CMS", "Headless", "API"],
+    "links": {
+      "github": "https://github.com/directus/directus",
+      "demo": "",
+      "youtube": "",
+      "web": "https://directus.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Outline",
+    "description": "Modern team knowledge base.",
+    "techStack": ["Node.js", "React", "PostgreSQL"],
+    "tags": ["Knowledge Base", "Collaboration"],
+    "links": {
+      "github": "https://github.com/outline/outline",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.getoutline.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Supabase",
+    "description": "Open-source Firebase alternative: Postgres + realtime.",
+    "techStack": ["Go", "TypeScript", "PostgreSQL"],
+    "tags": ["Backend", "Realtime", "BaaS"],
+    "links": {
+      "github": "https://github.com/supabase/supabase",
+      "demo": "",
+      "youtube": "",
+      "web": "https://supabase.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Appwrite",
+    "description": "End‑to‑end backend server for web/mobile apps.",
+    "techStack": ["PHP", "Node.js", "TypeScript"],
+    "tags": ["Backend", "API", "BaaS"],
+    "links": {
+      "github": "https://github.com/appwrite/appwrite",
+      "demo": "",
+      "youtube": "",
+      "web": "https://appwrite.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "PostHog",
+    "description": "Product analytics, session replay, feature flags.",
+    "techStack": ["Python", "PostgreSQL", "Redis"],
+    "tags": ["Analytics", "Feature Flags"],
+    "links": {
+      "github": "https://github.com/PostHog/posthog",
+      "demo": "",
+      "youtube": "",
+      "web": "https://posthog.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Spree Commerce",
+    "description": "Headless e‑commerce platform.",
+    "techStack": ["Ruby", "Rails", "PostgreSQL"],
+    "tags": ["E-commerce", "Headless"],
+    "links": {
+      "github": "https://github.com/spree/spree",
+      "demo": "",
+      "youtube": "",
+      "web": "https://spreecommerce.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Focalboard",
+    "description": "Self-hosted Kanban/project management.",
+    "techStack": ["Go", "React", "SQLite"],
+    "tags": ["Task Management", "Kanban"],
+    "links": {
+      "github": "https://github.com/mattermost/focalboard",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Metabase",
+    "description": "Business intelligence tool with dashboards.",
+    "techStack": ["Java", "React", "PostgreSQL"],
+    "tags": ["BI", "Dashboards"],
+    "links": {
+      "github": "https://github.com/metabase/metabase",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.metabase.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "ERPNext",
+    "description": "Full-featured ERP (accounting, HR, CRM...).",
+    "techStack": ["Python", "Frappe", "MariaDB"],
+    "tags": ["ERP", "CRM"],
+    "links": {
+      "github": "https://github.com/frappe/erpnext",
+      "demo": "",
+      "youtube": "",
+      "web": "https://erpnext.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Odoo",
+    "description": "Modular suite of business apps.",
+    "techStack": ["Python", "PostgreSQL"],
+    "tags": ["ERP", "Business Apps"],
+    "links": {
+      "github": "https://github.com/odoo/odoo",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.odoo.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Dolibarr",
+    "description": "ERP & CRM for small companies and freelancers.",
+    "techStack": ["PHP", "MySQL"],
+    "tags": ["ERP", "CRM"],
+    "links": {
+      "github": "https://github.com/Dolibarr/dolibarr",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.dolibarr.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "SuiteCRM",
+    "description": "Enterprise-ready CRM forked from SugarCRM CE.",
+    "techStack": ["PHP", "MySQL"],
+    "tags": ["CRM"],
+    "links": {
+      "github": "https://github.com/salesagility/suitecrm-core",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Ackee",
+    "description": "Self-hosted privacy-friendly analytics.",
+    "techStack": ["Node.js", "MongoDB", "TypeScript"],
+    "tags": ["Analytics", "Privacy", "Self‑hosted"],
+    "links": {
+      "github": "https://github.com/electerious/Ackee",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Shlink",
+    "description": "Self-hosted URL shortener with stats.",
+    "techStack": ["PHP", "MySQL"],
+    "tags": ["URL", "Shortener"],
+    "links": {
+      "github": "https://github.com/shlinkio/shlink",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Mealie",
+    "description": "Recipe manager and meal planner.",
+    "techStack": ["Python", "FastAPI", "Vue.js"],
+    "tags": ["Recipes", "Meal Planning"],
+    "links": {
+      "github": "https://github.com/hay-kot/mealie",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Label Studio",
+    "description": "Data labeling and annotation tool.",
+    "techStack": ["Python", "Django", "React"],
+    "tags": ["ML", "Annotation"],
+    "links": {
+      "github": "https://github.com/heartexlabs/label-studio",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Haystack",
+    "description": "NLP search framework.",
+    "techStack": ["Python", "Elasticsearch"],
+    "tags": ["ML", "Search"],
+    "links": {
+      "github": "https://github.com/deepset-ai/haystack",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Gradio",
+    "description": "Create interactive ML model UIs.",
+    "techStack": ["Python"],
+    "tags": ["ML", "UI"],
+    "links": {
+      "github": "https://github.com/gradio-app/gradio",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Streamlit",
+    "description": "Framework for building data apps.",
+    "techStack": ["Python"],
+    "tags": ["ML", "Dashboard"],
+    "links": {
+      "github": "https://github.com/streamlit/streamlit",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "FastChat",
+    "description": "Chatbot platform for conversation AI.",
+    "techStack": ["Python"],
+    "tags": ["AI", "Chatbot"],
+    "links": {
+      "github": "https://github.com/lm-sys/FastChat",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "MLflow",
+    "description": "Machine learning lifecycle management.",
+    "techStack": ["Python", "Java"],
+    "tags": ["ML", "MLOps"],
+    "links": {
+      "github": "https://github.com/mlflow/mlflow",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "PyTorch Lightning",
+    "description": "Lightweight ML framework built on PyTorch.",
+    "techStack": ["Python"],
+    "tags": ["ML", "Framework"],
+    "links": {
+      "github": "https://github.com/Lightning-AI/lightning",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "NocoDB",
+    "description": "Open-source Airtable alternative.",
+    "techStack": ["Node.js", "MySQL", "PostgreSQL"],
+    "tags": ["Spreadsheet", "Database"],
+    "links": {
+      "github": "https://github.com/nocodb/nocodb",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "PocketBase",
+    "description": "Realtime backend in Go, embedded DB.",
+    "techStack": ["Go"],
+    "tags": ["BaaS", "Backend"],
+    "links": {
+      "github": "https://github.com/pocketbase/pocketbase",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Label Studio",
+    "description": "Highly-configurable data labeling platform.",
+    "techStack": ["Python", "React"],
+    "tags": ["Data Annotation", "ML"],
+    "links": {
+      "github": "https://github.com/heartexlabs/label-studio",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Hasura",
+    "description": "Instant GraphQL API over Postgres.",
+    "techStack": ["Haskell", "GraphQL", "PostgreSQL"],
+    "tags": ["Backend", "GraphQL", "BaaS"],
+    "links": {
+      "github": "https://github.com/hasura/graphql-engine",
+      "demo": "",
+      "youtube": "",
+      "web": "https://hasura.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "N8N",
+    "description": "Workflow automation platform.",
+    "techStack": ["Node.js", "TypeScript", "PostgreSQL"],
+    "tags": ["Automation", "Workflow"],
+    "links": {
+      "github": "https://github.com/n8n-io/n8n",
+      "demo": "",
+      "youtube": "",
+      "web": "https://n8n.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "OpenProject",
+    "description": "Project management tool (Gantt, Agile).",
+    "techStack": ["Ruby on Rails", "AngularJS", "MySQL"],
+    "tags": ["Project Management", "Agile"],
+    "links": {
+      "github": "https://github.com/opf/openproject",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.openproject.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Taiga",
+    "description": "Agile project management (Kanban, Scrum).",
+    "techStack": ["Python", "AngularJS", "PostgreSQL"],
+    "tags": ["Agile", "Project Management"],
+    "links": {
+      "github": "https://github.com/taigaio/taiga-back",
+      "demo": "",
+      "youtube": "",
+      "web": "https://taiga.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Redmine",
+    "description": "Flexible project management web app.",
+    "techStack": ["Ruby", "Rails", "MySQL"],
+    "tags": ["Project Management", "Gantt"],
+    "links": {
+      "github": "https://github.com/redmine/redmine",
+      "demo": "",
+      "youtube": "",
+      "web": "http://www.redmine.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Wekan",
+    "description": "Collaborative kanban board.",
+    "techStack": ["Node.js", "Meteor", "MongoDB"],
+    "tags": ["Kanban", "Project Management"],
+    "links": {
+      "github": "https://github.com/wekan/wekan",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "OpenSign",
+    "description": "Digital signature solution.",
+    "techStack": ["Java", "Spring", "MySQL"],
+    "tags": ["Signature", "eSign"],
+    "links": {
+      "github": "https://github.com/OpenSignLabs/OpenSign",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Ghost",
+    "description": "Publishing platform for modern journalism.",
+    "techStack": ["Node.js", "Express", "MySQL"],
+    "tags": ["CMS", "Publishing"],
+    "links": {
+      "github": "https://github.com/TryGhost/Ghost",
+      "demo": "",
+      "youtube": "",
+      "web": "https://ghost.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "WordPress",
+    "description": "The most popular open-source CMS.",
+    "techStack": ["PHP", "MySQL"],
+    "tags": ["CMS", "Blog"],
+    "links": {
+      "github": "https://github.com/WordPress/WordPress",
+      "demo": "",
+      "youtube": "",
+      "web": "https://wordpress.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Drupal",
+    "description": "Robust CMS for complex sites.",
+    "techStack": ["PHP", "MySQL"],
+    "tags": ["CMS"],
+    "links": {
+      "github": "https://github.com/drupal/drupal",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.drupal.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Joomla",
+    "description": "User-friendly CMS platform.",
+    "techStack": ["PHP", "MySQL"],
+    "tags": ["CMS"],
+    "links": {
+      "github": "https://github.com/joomla/joomla-cms",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.joomla.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "EspoCRM",
+    "description": "Web-based CRM solution.",
+    "techStack": ["PHP", "MySQL"],
+    "tags": ["CRM"],
+    "links": {
+      "github": "https://github.com/espocrm/espocrm",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.espocrm.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "CiviCRM",
+    "description": "CRM for nonprofit/civic organizations.",
+    "techStack": ["PHP", "MySQL"],
+    "tags": ["CRM", "Nonprofit"],
+    "links": {
+      "github": "https://github.com/civicrm/civicrm-core",
+      "demo": "",
+      "youtube": "",
+      "web": "https://civicrm.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Nextcloud",
+    "description": "File sync, share, collaborative editing.",
+    "techStack": ["PHP", "MySQL"],
+    "tags": ["File Sharing", "Collaboration"],
+    "links": {
+      "github": "https://github.com/nextcloud/server",
+      "demo": "",
+      "youtube": "",
+      "web": "https://nextcloud.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "ownCloud",
+    "description": "File sync and collaboration platform.",
+    "techStack": ["PHP", "MySQL"],
+    "tags": ["File Sharing", "Collaboration"],
+    "links": {
+      "github": "https://github.com/owncloud/core",
+      "demo": "",
+      "youtube": "",
+      "web": "https://owncloud.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Seafile",
+    "description": "High-performance file sync & share.",
+    "techStack": ["Python", "C", "MySQL"],
+    "tags": ["File Sharing", "Sync"],
+    "links": {
+      "github": "https://github.com/haiwen/seafile",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.seafile.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Appsmith",
+    "description": "Internal tools builder (Retool alternative).",
+    "techStack": ["Node.js", "React", "MongoDB"],
+    "tags": ["Internal Tools", "Low-code"],
+    "links": {
+      "github": "https://github.com/appsmithorg/appsmith",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.appsmith.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "ToolJet",
+    "description": "Open-source internal tool builder.",
+    "techStack": ["Node.js", "React", "PostgreSQL"],
+    "tags": ["Internal Tools", "Low-code"],
+    "links": {
+      "github": "https://github.com/ToolJet/ToolJet",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.tooljet.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Budibase",
+    "description": "Low-code platform to build business apps.",
+    "techStack": ["Node.js", "React", "PostgreSQL"],
+    "tags": ["Low-code", "Internal Tools"],
+    "links": {
+      "github": "https://github.com/Budibase/budibase",
+      "demo": "",
+      "youtube": "",
+      "web": "https://budibase.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "FauxPilot",
+    "description": "Self‑hosted GitHub Copilot alternative.",
+    "techStack": ["Python", "Node.js"],
+    "tags": ["AI", "Code Completion"],
+    "links": {
+      "github": "https://github.com/fauxpilot/fauxpilot",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "YouCompleteMe",
+    "description": "Fast code-completion engine for editors.",
+    "techStack": ["C++", "Python"],
+    "tags": ["Code Completion"],
+    "links": {
+      "github": "https://github.com/ycm-core/YouCompleteMe",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "AppFlowy",
+    "description": "Notion alternative for note-taking & knowledge.",
+    "techStack": ["Rust", "Flutter"],
+    "tags": ["Notes", "Knowledge Base"],
+    "links": {
+      "github": "https://github.com/AppFlowy-IO/appflowy",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.appflowy.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "AFFiNE",
+    "description": "Next-gen knowledge base and note-taking.",
+    "techStack": ["TypeScript", "React"],
+    "tags": ["Notes", "Knowledge Base"],
+    "links": {
+      "github": "https://github.com/AFFiNE-Technology/affine",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "docmost",
+    "description": "Collaborative document editor.",
+    "techStack": ["Node.js", "React"],
+    "tags": ["Docs", "Collaboration"],
+    "links": {
+      "github": "https://github.com/docmost/docmost",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Next.js SaaS Starter",
+    "description": "Full-stack starter with authentication, payments.",
+    "techStack": ["Next.js", "Node.js", "PostgreSQL"],
+    "tags": ["Boilerplate", "SaaS"],
+    "links": {
+      "github": "https://github.com/async-labs/saas",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "BoxyHQ SaaS Starter Kit",
+    "description": "Enterprise-grade SaaS starter with SSO.",
+    "techStack": ["Node.js", "React", "TypeScript"],
+    "tags": ["Boilerplate", "SaaS"],
+    "links": {
+      "github": "https://github.com/BoxyHQ/saas-starter-kit",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Django SaaS Boilerplate",
+    "description": "Django starter with billing & subscriptions.",
+    "techStack": ["Python", "Django", "Stripe"],
+    "tags": ["Boilerplate", "SaaS"],
+    "links": {
+      "github": "https://github.com/pydanny/django-saas-boilerplate",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "SaaS Startup Kit",
+    "description": "SaaS microservices starter in Go.",
+    "techStack": ["Go", "gRPC", "PostgreSQL"],
+    "tags": ["Boilerplate", "Microservices"],
+    "links": {
+      "github": "https://github.com/frikky/saas-starter-kit",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "djangorocket",
+    "description": "Production-ready Django SaaS starter.",
+    "techStack": ["Python", "Django", "Docker"],
+    "tags": ["Boilerplate", "SaaS"],
+    "links": {
+      "github": "https://github.com/rocket-admin/djangorocket",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "SupaNuxt SaaS",
+    "description": "Nuxt3 SaaS boilerplate using Supabase.",
+    "techStack": ["Nuxt3", "Supabase", "PostgreSQL"],
+    "tags": ["Boilerplate", "SaaS"],
+    "links": {
+      "github": "https://github.com/unstackhq/supanuxt-saas",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "SaaSgear",
+    "description": "Full-stack SaaS boilerplate with billing.",
+    "techStack": ["Node.js", "React", "PostgreSQL"],
+    "tags": ["Boilerplate", "SaaS"],
+    "links": {
+      "github": "https://github.com/soajs/soajs.github.io",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Open SaaS",
+    "description": "Full-stack SaaS starter in React/Node.",
+    "techStack": ["React", "Node.js", "Prisma"],
+    "tags": ["Boilerplate", "SaaS"],
+    "links": {
+      "github": "https://github.com/vercel/commerce",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Nextacular",
+    "description": "Next.js SaaS boilerplate with workspace support.",
+    "techStack": ["Next.js", "Node.js"],
+    "tags": ["Boilerplate", "SaaS"],
+    "links": {
+      "github": "https://github.com/hi-itsnt/nextacular",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Strapi",
+    "description": "Headless CMS with customizable API.",
+    "techStack": ["Node.js", "React", "SQLite"],
+    "tags": ["CMS", "Headless"],
+    "links": {
+      "github": "https://github.com/strapi/strapi",
+      "demo": "",
+      "youtube": "",
+      "web": "https://strapi.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Hoppscotch",
+    "description": "API development platform for testing requests.",
+    "techStack": ["Node.js", "React"],
+    "tags": ["Developer Tools", "API"],
+    "links": {
+      "github": "https://github.com/hoppscotch/hoppscotch",
+      "demo": "",
+      "youtube": "",
+      "web": "https://hoppscotch.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Meilisearch",
+    "description": "Lightning-fast search engine with instant search.",
+    "techStack": ["Rust", "JavaScript"],
+    "tags": ["Search", "Developer Tools"],
+    "links": {
+      "github": "https://github.com/meilisearch/meilisearch",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.meilisearch.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Rocket.Chat",
+    "description": "Team communication platform similar to Slack.",
+    "techStack": ["Node.js", "Meteor", "React"],
+    "tags": ["Chat", "Collaboration"],
+    "links": {
+      "github": "https://github.com/RocketChat/Rocket.Chat",
+      "demo": "",
+      "youtube": "",
+      "web": "https://rocket.chat"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Discourse",
+    "description": "Forum platform built for modern web discussions.",
+    "techStack": ["Ruby", "Rails", "Ember.js"],
+    "tags": ["Community", "Forums"],
+    "links": {
+      "github": "https://github.com/discourse/discourse",
+      "demo": "",
+      "youtube": "",
+      "web": "https://discourse.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Chatwoot",
+    "description": "Customer engagement suite across channels.",
+    "techStack": ["Ruby", "Rails", "Vue.js"],
+    "tags": ["Support", "CRM"],
+    "links": {
+      "github": "https://github.com/chatwoot/chatwoot",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.chatwoot.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Formbricks",
+    "description": "Surveying platform for user feedback.",
+    "techStack": ["Node.js", "React", "PostgreSQL"],
+    "tags": ["Analytics", "Feedback"],
+    "links": {
+      "github": "https://github.com/formbricks/formbricks",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Coolify",
+    "description": "Self-hostable alternative to Heroku/Netlify.",
+    "techStack": ["Go", "Vue.js", "Docker"],
+    "tags": ["DevOps", "Hosting"],
+    "links": {
+      "github": "https://github.com/coollabsio/coolify",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Dokploy",
+    "description": "Self-hosted PaaS for apps & databases.",
+    "techStack": ["Go", "Docker"],
+    "tags": ["DevOps", "Hosting"],
+    "links": {
+      "github": "https://github.com/dokploy/dokploy",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Gatus",
+    "description": "Endpoint monitoring & alert system.",
+    "techStack": ["Go", "Docker"],
+    "tags": ["Monitoring", "Alerts"],
+    "links": {
+      "github": "https://github.com/TwinProduction/gatus",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "OpenStatus",
+    "description": "Synthetic monitoring for APIs & sites.",
+    "techStack": ["Go", "Vue.js"],
+    "tags": ["Monitoring", "Status Page"],
+    "links": {
+      "github": "https://github.com/openstatusio/openstatus",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Checkmate",
+    "description": "Uptime & infra monitoring app.",
+    "techStack": ["Go", "React"],
+    "tags": ["Monitoring", "Alerts"],
+    "links": {
+      "github": "https://github.com/checkmateapp/checkmate",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Sentry",
+    "description": "Error tracking & performance monitoring.",
+    "techStack": ["Python", "JavaScript", "Rust"],
+    "tags": ["Monitoring", "Errors"],
+    "links": {
+      "github": "https://github.com/getsentry/sentry",
+      "demo": "",
+      "youtube": "",
+      "web": "https://sentry.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Flagsmith",
+    "description": "Feature flag management & remote config.",
+    "techStack": ["Python", "Django", "React"],
+    "tags": ["Feature Flags", "DevOps"],
+    "links": {
+      "github": "https://github.com/Flagsmith/flagsmith",
+      "demo": "",
+      "youtube": "",
+      "web": "https://flagsmith.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Zulip",
+    "description": "Topic‑threaded team chat platform.",
+    "techStack": ["Python", "Django", "React"],
+    "tags": ["Chat", "Collaboration"],
+    "links": {
+      "github": "https://github.com/zulip/zulip",
+      "demo": "",
+      "youtube": "",
+      "web": "https://zulip.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Plane",
+    "description": "Issue tracking, sprint & roadmap tool.",
+    "techStack": ["TypeScript", "Node.js", "React"],
+    "tags": ["Project Management", "Agile"],
+    "links": {
+      "github": "https://github.com/plane/plane",
+      "demo": "",
+      "youtube": "",
+      "web": "https://plane.so"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Umami",
+    "description": "Simple, privacy‑focused web analytics.",
+    "techStack": ["Node.js", "Vue.js"],
+    "tags": ["Analytics", "Privacy"],
+    "links": {
+      "github": "https://github.com/umami-software/umami",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Matomo",
+    "description": "Full-featured web analytics platform.",
+    "techStack": ["PHP", "MySQL"],
+    "tags": ["Analytics", "Privacy"],
+    "links": {
+      "github": "https://github.com/matomo-org/matomo",
+      "demo": "",
+      "youtube": "",
+      "web": "https://matomo.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Mautic",
+    "description": "Marketing automation platform.",
+    "techStack": ["PHP", "Symfony", "MySQL"],
+    "tags": ["Marketing", "Automation"],
+    "links": {
+      "github": "https://github.com/mautic/mautic",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.mautic.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Civicrm",
+    "description": "CRM for nonprofits & civic organizations.",
+    "techStack": ["PHP", "MySQL"],
+    "tags": ["CRM", "Nonprofit"],
+    "links": {
+      "github": "https://github.com/civicrm/civicrm-core",
+      "demo": "",
+      "youtube": "",
+      "web": "https://civicrm.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "BookStack",
+    "description": "Self‑hosted wiki platform.",
+    "techStack": ["PHP", "Laravel"],
+    "tags": ["Wiki", "Documentation"],
+    "links": {
+      "github": "https://github.com/BookStackApp/BookStack",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.bookstackapp.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "iDempiere",
+    "description": "Community‑driven ERP/CRM/SCM suite.",
+    "techStack": ["Java", "ZK", "OSGi"],
+    "tags": ["ERP", "CRM"],
+    "links": {
+      "github": "https://github.com/idempiere/idempiere",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.idempiere.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Metasfresh",
+    "description": "ERP/CRM for SMEs, fork of ADempiere.",
+    "techStack": ["Java", "JavaScript", "SQL"],
+    "tags": ["ERP", "SME"],
+    "links": {
+      "github": "https://github.com/metasfresh/metasfresh",
+      "demo": "",
+      "youtube": "",
+      "web": "https://metasfresh.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Keila",
+    "description": "Open-source Mailchimp‑style email marketing.",
+    "techStack": ["TypeScript", "Node.js"],
+    "tags": ["Email", "Marketing"],
+    "links": {
+      "github": "https://github.com/pentacent/keila",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Habitica",
+    "description": "Gamified task & habit tracker.",
+    "techStack": ["Node.js", "MongoDB", "Vue.js"],
+    "tags": ["Productivity", "Gamification"],
+    "links": {
+      "github": "https://github.com/HabitRPG/habitica",
+      "demo": "",
+      "youtube": "",
+      "web": "https://habitica.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Mattermost",
+    "description": "Secure team communication platform.",
+    "techStack": ["Go", "React", "PostgreSQL"],
+    "tags": ["Chat", "Collaboration"],
+    "links": {
+      "github": "https://github.com/mattermost/mattermost-server",
+      "demo": "",
+      "youtube": "",
+      "web": "https://mattermost.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Grafana",
+    "description": "Observability & data visualization.",
+    "techStack": ["Go", "TypeScript", "React"],
+    "tags": ["Monitoring", "Analytics"],
+    "links": {
+      "github": "https://github.com/grafana/grafana",
+      "demo": "",
+      "youtube": "",
+      "web": "https://grafana.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "K6",
+    "description": "Modern, scriptable load-testing tool.",
+    "techStack": ["Go", "JavaScript"],
+    "tags": ["Testing", "Performance"],
+    "links": {
+      "github": "https://github.com/k6io/k6",
+      "demo": "",
+      "youtube": "",
+      "web": "https://k6.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Supertokens",
+    "description": "Open-source authentication alternative.",
+    "techStack": ["Node.js", "JavaScript"],
+    "tags": ["Auth", "Security"],
+    "links": {
+      "github": "https://github.com/supertokens/supertokens-core",
+      "demo": "",
+      "youtube": "",
+      "web": "https://supertokens.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Rancher",
+    "description": "Kubernetes cluster management platform.",
+    "techStack": ["Go", "Vue.js"],
+    "tags": ["DevOps", "Containers"],
+    "links": {
+      "github": "https://github.com/rancher/rancher",
+      "demo": "",
+      "youtube": "",
+      "web": "https://rancher.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Drone CI",
+    "description": "Container-native CI/CD platform.",
+    "techStack": ["Go", "YAML"],
+    "tags": ["CI/CD", "DevOps"],
+    "links": {
+      "github": "https://github.com/drone/drone",
+      "demo": "",
+      "youtube": "",
+      "web": "https://drone.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Supertokens",
+    "description": "Open-source authentication & session management.",
+    "techStack": ["Node.js", "JavaScript"],
+    "tags": ["Security", "Auth"],
+    "links": {
+      "github": "https://github.com/supertokens/supertokens-core",
+      "demo": "",
+      "youtube": "",
+      "web": "https://supertokens.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Retraced Audit Logs",
+    "description": "Service for centralized audit logging.",
+    "techStack": ["Node.js", "Go"],
+    "tags": ["Security", "Logging"],
+    "links": {
+      "github": "https://github.com/retracedhq/retraced",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Hasura",
+    "description": "Instant GraphQL APIs over Postgres.",
+    "techStack": ["Haskell", "GraphQL", "PostgreSQL"],
+    "tags": ["API", "Backend"],
+    "links": {
+      "github": "https://github.com/hasura/graphql-engine",
+      "demo": "",
+      "youtube": "",
+      "web": "https://hasura.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Meltano",
+    "description": "Data integration & ELT tool.",
+    "techStack": ["Python"],
+    "tags": ["Data", "ELT"],
+    "links": {
+      "github": "https://github.com/meltano/meltano",
+      "demo": "",
+      "youtube": "",
+      "web": "https://meltano.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Odigos",
+    "description": "Observability with OpenTelemetry & eBPF.",
+    "techStack": ["Go", "eBPF"],
+    "tags": ["Monitoring", "Observability"],
+    "links": {
+      "github": "https://github.com/odigos/odigos",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Trigger.dev",
+    "description": "Build event-based background Jobs easily.",
+    "techStack": ["Node.js", "TypeScript"],
+    "tags": ["Jobs", "Automation"],
+    "links": {
+      "github": "https://github.com/triggerdotdev/trigger.dev",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "OpenProj",
+    "description": "Java-based project planning tool.",
+    "techStack": ["Java", "Swing"],
+    "tags": ["Project Management", "Desktop"],
+    "links": {
+      "github": "https://sourceforge.net/projects/openproj",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "PocketBase",
+    "description": "Embedded backend: DB, auth, API.",
+    "techStack": ["Go"],
+    "tags": ["BaaS", "Backend"],
+    "links": {
+      "github": "https://github.com/pocketbase/pocketbase",
+      "demo": "",
+      "youtube": "",
+      "web": "https://pocketbase.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Saleor",
+    "description": "GraphQL-first e-commerce platform.",
+    "techStack": ["Python", "Django", "GraphQL"],
+    "tags": ["E-commerce", "Headless"],
+    "links": {
+      "github": "https://github.com/saleor/saleor",
+      "demo": "",
+      "youtube": "",
+      "web": "https://saleor.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Bagisto",
+    "description": "Laravel-based e-commerce framework.",
+    "techStack": ["PHP", "Laravel"],
+    "tags": ["E-commerce", "Framework"],
+    "links": {
+      "github": "https://github.com/bagisto/bagisto",
+      "demo": "",
+      "youtube": "",
+      "web": "https://bagisto.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Reaction Commerce",
+    "description": "API-first commerce platform.",
+    "techStack": ["Node.js", "React", "MongoDB"],
+    "tags": ["E-commerce", "API"],
+    "links": {
+      "github": "https://github.com/reactioncommerce/reaction",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Medusa",
+    "description": "Headless commerce engine.",
+    "techStack": ["Node.js", "TypeScript", "PostgreSQL"],
+    "tags": ["E-commerce", "Headless"],
+    "links": {
+      "github": "https://github.com/medusajs/medusa",
+      "demo": "",
+      "youtube": "",
+      "web": "https://medusajs.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Sylius",
+    "description": "E-commerce platform on Symfony.",
+    "techStack": ["PHP", "Symfony"],
+    "tags": ["E-commerce", "Platform"],
+    "links": {
+      "github": "https://github.com/Sylius/Sylius",
+      "demo": "",
+      "youtube": "",
+      "web": "https://sylius.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Vendure",
+    "description": "Headless commerce for modern stacks.",
+    "techStack": ["Node.js", "TypeScript", "GraphQL"],
+    "tags": ["E-commerce", "Headless"],
+    "links": {
+      "github": "https://github.com/vendure-ecommerce/vendure",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.vendure.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "OpenCart",
+    "description": "PHP-based online store builder.",
+    "techStack": ["PHP", "MySQL"],
+    "tags": ["E-commerce", "Platform"],
+    "links": {
+      "github": "https://github.com/opencart/opencart",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.opencart.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "PrestaShop",
+    "description": "Feature-rich e-commerce system.",
+    "techStack": ["PHP", "MySQL"],
+    "tags": ["E-commerce", "Retail"],
+    "links": {
+      "github": "https://github.com/PrestaShop/PrestaShop",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.prestashop.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Drupal Commerce",
+    "description": "E-commerce module for Drupal CMS.",
+    "techStack": ["PHP", "Drupal"],
+    "tags": ["E-commerce", "CMS"],
+    "links": {
+      "github": "https://github.com/drupalcommerce/commerce",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "n8n",
+    "description": "Fair‑code workflow automation tool with drag‑and‑drop UI.",
+    "techStack": ["Node.js", "TypeScript"],
+    "tags": ["Automation", "Workflow"],
+    "links": {
+      "github": "https://github.com/n8n-io/n8n",
+      "demo": "",
+      "youtube": "",
+      "web": "https://n8n.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "TimescaleDB",
+    "description": "Time‑series SQL database built as PostgreSQL extension.",
+    "techStack": ["Rust", "SQL"],
+    "tags": ["Database", "Time‑series"],
+    "links": {
+      "github": "https://github.com/timescale/timescaledb",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.timescale.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "IPFS",
+    "description": "Peer‑to‑peer hypermedia protocol for decentralization.",
+    "techStack": ["Go", "JavaScript"],
+    "tags": ["Decentralized", "Storage"],
+    "links": {
+      "github": "https://github.com/ipfs/ipfs",
+      "demo": "",
+      "youtube": "",
+      "web": "https://ipfs.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "The Graph",
+    "description": "Blockchain data indexing protocol.",
+    "techStack": ["Rust", "GraphQL"],
+    "tags": ["Blockchain", "Data"],
+    "links": {
+      "github": "https://github.com/graphprotocol/graph-node",
+      "demo": "",
+      "youtube": "",
+      "web": "https://thegraph.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Radicle",
+    "description": "Peer‑to‑peer code collaboration network.",
+    "techStack": ["Rust", "Git"],
+    "tags": ["DevTools", "Decentralized"],
+    "links": {
+      "github": "https://github.com/radicle-dev/radicle-upstream",
+      "demo": "",
+      "youtube": "",
+      "web": "https://radicle.xyz"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Gnosis Safe",
+    "description": "Smart contract wallet with multisig.",
+    "techStack": ["Solidity", "TypeScript"],
+    "tags": ["Blockchain", "Finance"],
+    "links": {
+      "github": "https://github.com/gnosis/safe-contracts",
+      "demo": "",
+      "youtube": "",
+      "web": "https://gnosis-safe.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Hardhat",
+    "description": "Ethereum development environment and framework.",
+    "techStack": ["JavaScript", "TypeScript"],
+    "tags": ["Blockchain", "DevTools"],
+    "links": {
+      "github": "https://github.com/nomiclabs/hardhat",
+      "demo": "",
+      "youtube": "",
+      "web": "https://hardhat.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Truffle",
+    "description": "Ethereum smart contract development suite.",
+    "techStack": ["JavaScript", "Solidity"],
+    "tags": ["Blockchain", "DevTools"],
+    "links": {
+      "github": "https://github.com/trufflesuite/truffle",
+      "demo": "",
+      "youtube": "",
+      "web": "https://trufflesuite.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "WalletConnect",
+    "description": "Protocol for connecting decentralized apps to mobile wallets.",
+    "techStack": ["Go", "TypeScript"],
+    "tags": ["Blockchain", "Protocol"],
+    "links": {
+      "github": "https://github.com/WalletConnect/walletconnect-monorepo",
+      "demo": "",
+      "youtube": "",
+      "web": "https://walletconnect.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Kong",
+    "description": "API gateway for microservices & integrations.",
+    "techStack": ["Go", "Lua"],
+    "tags": ["API", "Gateway"],
+    "links": {
+      "github": "https://github.com/Kong/kong",
+      "demo": "",
+      "youtube": "",
+      "web": "https://konghq.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Tyk",
+    "description": "Open‑source API gateway and management platform.",
+    "techStack": ["Go", "JavaScript"],
+    "tags": ["API", "Integration"],
+    "links": {
+      "github": "https://github.com/tykio/tyk",
+      "demo": "",
+      "youtube": "",
+      "web": "https://tyk.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "PostgREST",
+    "description": "Instant REST API for PostgreSQL databases.",
+    "techStack": ["Haskell"],
+    "tags": ["API", "Backend"],
+    "links": {
+      "github": "https://github.com/PostgREST/postgrest",
+      "demo": "",
+      "youtube": "",
+      "web": "http://postgrest.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Kibana",
+    "description": "Visualization dashboard for Elasticsearch.",
+    "techStack": ["TypeScript", "React"],
+    "tags": ["Analytics", "Visualization"],
+    "links": {
+      "github": "https://github.com/elastic/kibana",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.elastic.co/kibana"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Apache Airflow",
+    "description": "Workflow automation & scheduling system.",
+    "techStack": ["Python"],
+    "tags": ["Workflow", "Data"],
+    "links": {
+      "github": "https://github.com/apache/airflow",
+      "demo": "",
+      "youtube": "",
+      "web": "https://airflow.apache.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Dash",
+    "description": "Python framework for reactive web apps.",
+    "techStack": ["Python"],
+    "tags": ["Dashboard", "Data"],
+    "links": {
+      "github": "https://github.com/plotly/dash",
+      "demo": "",
+      "youtube": "",
+      "web": "https://dash.plotly.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Lightdash",
+    "description": "Open‑source BI tool for dbt users.",
+    "techStack": ["TypeScript", "React"],
+    "tags": ["BI", "Analytics"],
+    "links": {
+      "github": "https://github.com/lightdash/lightdash",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.lightdash.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Element (Matrix)",
+    "description": "Secure chat client on Matrix protocol.",
+    "techStack": ["TypeScript", "React"],
+    "tags": ["Chat", "Security"],
+    "links": {
+      "github": "https://github.com/vector-im/element-web",
+      "demo": "",
+      "youtube": "",
+      "web": "https://element.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Jitsi Meet",
+    "description": "Secure video conferencing solution.",
+    "techStack": ["JavaScript", "React"],
+    "tags": ["Video", "Collaboration"],
+    "links": {
+      "github": "https://github.com/jitsi/jitsi-meet",
+      "demo": "",
+      "youtube": "",
+      "web": "https://jitsi.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "CryptPad",
+    "description": "Privacy‑focused collaborative docs suite.",
+    "techStack": ["JavaScript", "OCaml"],
+    "tags": ["Docs", "Encryption"],
+    "links": {
+      "github": "https://github.com/cryptpad/cryptpad",
+      "demo": "",
+      "youtube": "",
+      "web": "https://cryptpad.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "FreeScout",
+    "description": "Lightweight helpdesk & shared inbox.",
+    "techStack": ["PHP", "Laravel"],
+    "tags": ["Support", "CRM"],
+    "links": {
+      "github": "https://github.com/freescout-helpdesk/freescout",
+      "demo": "",
+      "youtube": "",
+      "web": "https://freescout.net"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Zammad",
+    "description": "Web‑based helpdesk ticketing system.",
+    "techStack": ["Ruby", "Rails"],
+    "tags": ["Support", "Helpdesk"],
+    "links": {
+      "github": "https://github.com/zammad/zammad",
+      "demo": "",
+      "youtube": "",
+      "web": "https://zammad.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "osTicket",
+    "description": "Popular open‑source ticketing system.",
+    "techStack": ["PHP", "MySQL"],
+    "tags": ["Support", "Helpdesk"],
+    "links": {
+      "github": "https://github.com/osTicket/osTicket",
+      "demo": "",
+      "youtube": "",
+      "web": "https://osticket.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Yetiforce",
+    "description": "CRM system with helpdesk integration.",
+    "techStack": ["PHP", "MySQL"],
+    "tags": ["CRM", "Helpdesk"],
+    "links": {
+      "github": "https://github.com/YetiForceCompany/YetiForceCRM",
+      "demo": "",
+      "youtube": "",
+      "web": "https://yetiforce.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Monica",
+    "description": "Personal CRM to organize relationships.",
+    "techStack": ["PHP", "Laravel", "MySQL"],
+    "tags": ["CRM", "Personal"],
+    "links": {
+      "github": "https://github.com/monicahq/monica",
+      "demo": "",
+      "youtube": "",
+      "web": "https://monica.app"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Miniflux",
+    "description": "Minimalist and efficient RSS reader.",
+    "techStack": ["Go"],
+    "tags": ["Reader", "Productivity"],
+    "links": {
+      "github": "https://github.com/miniflux/miniflux",
+      "demo": "",
+      "youtube": "",
+      "web": "https://miniflux.app"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Fathom Analytics",
+    "description": "Privacy-first website analytics.",
+    "techStack": ["Go", "JavaScript"],
+    "tags": ["Analytics", "Privacy"],
+    "links": {
+      "github": "https://github.com/usefathom/fathom",
+      "demo": "",
+      "youtube": "",
+      "web": "https://usefathom.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Countly",
+    "description": "Product analytics & marketing platform.",
+    "techStack": ["Node.js", "MongoDB"],
+    "tags": ["Analytics", "Marketing"],
+    "links": {
+      "github": "https://github.com/Countly/countly-server",
+      "demo": "",
+      "youtube": "",
+      "web": "https://count.ly"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "KrakenD",
+    "description": "Ultra-high performance API gateway.",
+    "techStack": ["Go"],
+    "tags": ["API", "Gateway"],
+    "links": {
+      "github": "https://github.com/devopsfaith/krakend",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.krakend.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "OpenAPI Generator",
+    "description": "Generate API clients & servers from OpenAPI specs.",
+    "techStack": ["Java"],
+    "tags": ["API", "Tools"],
+    "links": {
+      "github": "https://github.com/OpenAPITools/openapi-generator",
+      "demo": "",
+      "youtube": "",
+      "web": "https://openapi-generator.tech"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Joplin",
+    "description": "Offline-first note-taking app.",
+    "techStack": ["JavaScript", "React"],
+    "tags": ["Notes", "Productivity"],
+    "links": {
+      "github": "https://github.com/laurent22/joplin",
+      "demo": "",
+      "youtube": "",
+      "web": "https://joplinapp.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "OnlyOffice",
+    "description": "Collaboration office suite (Docs, Sheets, Slides).",
+    "techStack": ["JavaScript", "PHP"],
+    "tags": ["Docs", "Collaboration"],
+    "links": {
+      "github": "https://github.com/ONLYOFFICE/DocumentServer",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.onlyoffice.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Apiman",
+    "description": "API management platform by Red Hat.",
+    "techStack": ["Java"],
+    "tags": ["API", "Management"],
+    "links": {
+      "github": "https://github.com/apiman/apiman",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.apiman.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Chainlink",
+    "description": "Decentralized oracle network.",
+    "techStack": ["Solidity", "Go"],
+    "tags": ["Blockchain", "Oracle"],
+    "links": {
+      "github": "https://github.com/smartcontractkit/chainlink",
+      "demo": "",
+      "youtube": "",
+      "web": "https://chain.link"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "OpenZeppelin",
+    "description": "Smart contract development library.",
+    "techStack": ["Solidity"],
+    "tags": ["Blockchain", "Security"],
+    "links": {
+      "github": "https://github.com/OpenZeppelin/openzeppelin-contracts",
+      "demo": "",
+      "youtube": "",
+      "web": "https://openzeppelin.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Metamask Flask",
+    "description": "Pluginable Ethereum wallet for devs.",
+    "techStack": ["TypeScript"],
+    "tags": ["Blockchain", "Wallet"],
+    "links": {
+      "github": "https://github.com/MetaMask/flask",
+      "demo": "",
+      "youtube": "",
+      "web": "https://metamask.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Papercups",
+    "description": "Live customer chat tool in Elixir.",
+    "techStack": ["Elixir", "JavaScript"],
+    "tags": ["Chat", "Support"],
+    "links": {
+      "github": "https://github.com/papercups-io/papercups",
+      "demo": "",
+      "youtube": "",
+      "web": "https://papercups.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Accent",
+    "description": "Online translation tool for developers.",
+    "techStack": ["Elixir", "Phoenix"],
+    "tags": ["Localization", "Developer"],
+    "links": {
+      "github": "https://github.com/phrase/phrase",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Godello",
+    "description": "Kanban board built with Elixir & Phoenix.",
+    "techStack": ["Elixir", "Phoenix"],
+    "tags": ["Kanban", "Project Management"],
+    "links": {
+      "github": "https://github.com/otwcode/godello",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Pleroma",
+    "description": "Federated microblogging server (ActivityPub).",
+    "techStack": ["Elixir", "Erlang"],
+    "tags": ["Social", "Federation"],
+    "links": {
+      "github": "https://github.com/pleroma/pleroma",
+      "demo": "",
+      "youtube": "",
+      "web": "https://pleroma.social"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "EGroupware",
+    "description": "Groupware suite: calendar, email, wiki, kanban.",
+    "techStack": ["PHP", "TypeScript"],
+    "tags": ["Groupware", "Collaboration"],
+    "links": {
+      "github": "https://github.com/EGroupware/egroupware",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.egroupware.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Eclipse Che",
+    "description": "Online IDE and developer workspace server.",
+    "techStack": ["Java"],
+    "tags": ["IDE", "Developer Tools"],
+    "links": {
+      "github": "https://github.com/eclipse/che",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.eclipse.org/che"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Rainbond",
+    "description": "Cloud-native app management platform.",
+    "techStack": ["Go", "Docker"],
+    "tags": ["PaaS", "Cloud"],
+    "links": {
+      "github": "https://github.com/goodrain/rainbond",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Sqlfiddle3",
+    "description": "SQL playground for testing queries.",
+    "techStack": ["Java", "SQL"],
+    "tags": ["Database", "Testing"],
+    "links": {
+      "github": "https://github.com/pauln/sqlfiddle",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Memberprism",
+    "description": "Manage member-only content & subscriptions.",
+    "techStack": ["Node.js", "MongoDB"],
+    "tags": ["Membership", "Content"],
+    "links": {
+      "github": "https://github.com/your-repo/memberprism",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Laraplans",
+    "description": "Laravel SaaS billing and subscription plans.",
+    "techStack": ["PHP", "Laravel"],
+    "tags": ["Billing", "Subscriptions"],
+    "links": {
+      "github": "https://github.com/Laraplans/laraplans",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Tenancy for Laravel",
+    "description": "Automatic multi-tenant support for Laravel apps.",
+    "techStack": ["PHP", "Laravel"],
+    "tags": ["Multi‑Tenant", "Backend"],
+    "links": {
+      "github": "https://github.com/tenancy/tenancy",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Cloudsim Plus",
+    "description": "Java framework for cloud computing simulation.",
+    "techStack": ["Java"],
+    "tags": ["Simulation", "Cloud"],
+    "links": {
+      "github": "https://github.com/cloudsimplus/cloudsim-plus",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Workflow by 华炎魔方",
+    "description": "Low-code BPM and workflow engine.",
+    "techStack": ["Java", "Vue.js"],
+    "tags": ["Workflow", "Low‑Code"],
+    "links": {
+      "github": "https://github.com/your-repo/workflow",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Saleor",
+    "description": "GraphQL-first e-commerce platform.",
+    "techStack": ["Python", "Django", "GraphQL"],
+    "tags": ["E-commerce", "Headless"],
+    "links": {
+      "github": "https://github.com/saleor/saleor",
+      "demo": "",
+      "youtube": "",
+      "web": "https://saleor.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Medusa",
+    "description": "Open-source headless commerce platform.",
+    "techStack": ["Node.js", "TypeScript", "PostgreSQL"],
+    "tags": ["E-commerce", "Headless"],
+    "links": {
+      "github": "https://github.com/medusajs/medusa",
+      "demo": "",
+      "youtube": "",
+      "web": "https://medusajs.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Bagisto",
+    "description": "E-commerce platform built on Laravel.",
+    "techStack": ["PHP", "Laravel"],
+    "tags": ["E-commerce", "Framework"],
+    "links": {
+      "github": "https://github.com/bagisto/bagisto",
+      "demo": "",
+      "youtube": "",
+      "web": "https://bagisto.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Reaction Commerce",
+    "description": "API-first e-commerce platform.",
+    "techStack": ["Node.js", "React", "MongoDB"],
+    "tags": ["E-commerce", "API"],
+    "links": {
+      "github": "https://github.com/reactioncommerce/reaction",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Sylius",
+    "description": "E-commerce platform based on Symfony.",
+    "techStack": ["PHP", "Symfony"],
+    "tags": ["E-commerce", "Platform"],
+    "links": {
+      "github": "https://github.com/Sylius/Sylius",
+      "demo": "",
+      "youtube": "",
+      "web": "https://sylius.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Vendure",
+    "description": "Headless commerce framework.",
+    "techStack": ["Node.js", "TypeScript", "GraphQL"],
+    "tags": ["E-commerce", "Headless"],
+    "links": {
+      "github": "https://github.com/vendure-ecommerce/vendure",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.vendure.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "OpenCart",
+    "description": "PHP-based online store builder.",
+    "techStack": ["PHP", "MySQL"],
+    "tags": ["E-commerce", "Platform"],
+    "links": {
+      "github": "https://github.com/opencart/opencart",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.opencart.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "PrestaShop",
+    "description": "Feature-rich e-commerce platform.",
+    "techStack": ["PHP", "MySQL"],
+    "tags": ["E-commerce", "Retail"],
+    "links": {
+      "github": "https://github.com/PrestaShop/PrestaShop",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.prestashop.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Drupal Commerce",
+    "description": "E-commerce module for Drupal CMS.",
+    "techStack": ["PHP", "Drupal"],
+    "tags": ["E-commerce", "CMS"],
+    "links": {
+      "github": "https://github.com/drupalcommerce/commerce",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Monica",
+    "description": "Personal CRM to organize relationships.",
+    "techStack": ["PHP", "Laravel", "MySQL"],
+    "tags": ["CRM", "Personal"],
+    "links": {
+      "github": "https://github.com/monicahq/monica",
+      "demo": "",
+      "youtube": "",
+      "web": "https://monica.app"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "EspoCRM",
+    "description": "Web-based CRM application.",
+    "techStack": ["PHP", "MySQL", "JavaScript"],
+    "tags": ["CRM", "Web"],
+    "links": {
+      "github": "https://github.com/espocrm/espocrm",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.espocrm.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "SuiteCRM",
+    "description": "CRM forked from SugarCRM.",
+    "techStack": ["PHP", "MySQL"],
+    "tags": ["CRM", "Enterprise"],
+    "links": {
+      "github": "https://github.com/salesagility/SuiteCRM",
+      "demo": "",
+      "youtube": "",
+      "web": "https://suitecrm.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "ERPNext",
+    "description": "ERP & CRM system with accounting, inventory.",
+    "techStack": ["Python", "Frappe", "MariaDB"],
+    "tags": ["ERP", "CRM"],
+    "links": {
+      "github": "https://github.com/frappe/erpnext",
+      "demo": "",
+      "youtube": "",
+      "web": "https://erpnext.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Mautic",
+    "description": "Marketing automation platform.",
+    "techStack": ["PHP", "Symfony"],
+    "tags": ["Marketing", "Automation"],
+    "links": {
+      "github": "https://github.com/mautic/mautic",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.mautic.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "PostHog",
+    "description": "Open-source product analytics platform.",
+    "techStack": ["Python", "PostgreSQL", "React"],
+    "tags": ["Analytics", "Product"],
+    "links": {
+      "github": "https://github.com/PostHog/posthog",
+      "demo": "",
+      "youtube": "",
+      "web": "https://posthog.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Plausible Analytics",
+    "description": "Simple & privacy-friendly website analytics.",
+    "techStack": ["Elixir", "PostgreSQL"],
+    "tags": ["Analytics", "Privacy"],
+    "links": {
+      "github": "https://github.com/plausible/analytics",
+      "demo": "",
+      "youtube": "",
+      "web": "https://plausible.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Matomo",
+    "description": "Open-source web analytics platform.",
+    "techStack": ["PHP", "MySQL"],
+    "tags": ["Analytics", "Web"],
+    "links": {
+      "github": "https://github.com/matomo-org/matomo",
+      "demo": "",
+      "youtube": "",
+      "web": "https://matomo.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Kibana",
+    "description": "Visualization dashboard for Elasticsearch.",
+    "techStack": ["TypeScript", "React"],
+    "tags": ["Visualization", "Analytics"],
+    "links": {
+      "github": "https://github.com/elastic/kibana",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.elastic.co/kibana"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Metabase",
+    "description": "Open-source BI tool for analytics and dashboards.",
+    "techStack": ["Java", "React"],
+    "tags": ["BI", "Analytics"],
+    "links": {
+      "github": "https://github.com/metabase/metabase",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.metabase.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Redash",
+    "description": "Query, visualize and share your data.",
+    "techStack": ["Python", "React", "PostgreSQL"],
+    "tags": ["BI", "Analytics"],
+    "links": {
+      "github": "https://github.com/getredash/redash",
+      "demo": "",
+      "youtube": "",
+      "web": "https://redash.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "OpenProject",
+    "description": "Project management software.",
+    "techStack": ["Ruby on Rails", "AngularJS"],
+    "tags": ["Project Management"],
+    "links": {
+      "github": "https://github.com/opf/openproject",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.openproject.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Taiga",
+    "description": "Project management platform for agile teams.",
+    "techStack": ["Python", "Django", "AngularJS"],
+    "tags": ["Project Management", "Agile"],
+    "links": {
+      "github": "https://github.com/taigaio/taiga-back",
+      "demo": "",
+      "youtube": "",
+      "web": "https://taiga.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Restyaboard",
+    "description": "Open-source Trello alternative.",
+    "techStack": ["PHP", "MySQL"],
+    "tags": ["Project Management", "Kanban"],
+    "links": {
+      "github": "https://github.com/RestyaPlatform/board",
+      "demo": "",
+      "youtube": "",
+      "web": "https://restya.com/board"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Wekan",
+    "description": "Open-source kanban board.",
+    "techStack": ["Meteor", "MongoDB"],
+    "tags": ["Project Management", "Kanban"],
+    "links": {
+      "github": "https://github.com/wekan/wekan",
+      "demo": "",
+      "youtube": "",
+      "web": "https://wekan.github.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "ERPNext",
+    "description": "Comprehensive ERP system.",
+    "techStack": ["Python", "MariaDB"],
+    "tags": ["ERP", "Accounting"],
+    "links": {
+      "github": "https://github.com/frappe/erpnext",
+      "demo": "",
+      "youtube": "",
+      "web": "https://erpnext.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Sentry",
+    "description": "Application monitoring and error tracking.",
+    "techStack": ["Python", "JavaScript"],
+    "tags": ["Monitoring", "Error Tracking"],
+    "links": {
+      "github": "https://github.com/getsentry/sentry",
+      "demo": "",
+      "youtube": "",
+      "web": "https://sentry.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Graylog",
+    "description": "Centralized log management.",
+    "techStack": ["Java", "MongoDB"],
+    "tags": ["Logging", "Monitoring"],
+    "links": {
+      "github": "https://github.com/Graylog2/graylog2-server",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.graylog.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Rocket.Chat",
+    "description": "Team communication platform.",
+    "techStack": ["JavaScript", "Meteor", "MongoDB"],
+    "tags": ["Chat", "Collaboration"],
+    "links": {
+      "github": "https://github.com/RocketChat/Rocket.Chat",
+      "demo": "",
+      "youtube": "",
+      "web": "https://rocket.chat"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Mattermost",
+    "description": "Secure messaging platform.",
+    "techStack": ["Go", "React"],
+    "tags": ["Chat", "Collaboration"],
+    "links": {
+      "github": "https://github.com/mattermost/mattermost-server",
+      "demo": "",
+      "youtube": "",
+      "web": "https://mattermost.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Nextcloud",
+    "description": "Self-hosted file sync and share.",
+    "techStack": ["PHP", "JavaScript"],
+    "tags": ["File Sharing", "Collaboration"],
+    "links": {
+      "github": "https://github.com/nextcloud/server",
+      "demo": "",
+      "youtube": "",
+      "web": "https://nextcloud.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Jitsi Meet",
+    "description": "Secure video conferencing.",
+    "techStack": ["JavaScript", "React"],
+    "tags": ["Video Conferencing", "Communication"],
+    "links": {
+      "github": "https://github.com/jitsi/jitsi-meet",
+      "demo": "",
+      "youtube": "",
+      "web": "https://jitsi.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "CryptPad",
+    "description": "Encrypted collaborative office suite.",
+    "techStack": ["JavaScript", "OCaml"],
+    "tags": ["Collaboration", "Encryption"],
+    "links": {
+      "github": "https://github.com/cryptpad/cryptpad",
+      "demo": "",
+      "youtube": "",
+      "web": "https://cryptpad.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Taiga",
+    "description": "Agile project management tool.",
+    "techStack": ["Python", "Django", "AngularJS"],
+    "tags": ["Project Management", "Agile"],
+    "links": {
+      "github": "https://github.com/taigaio/taiga-back",
+      "demo": "",
+      "youtube": "",
+      "web": "https://taiga.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Odoo",
+    "description": "Comprehensive open-source ERP.",
+    "techStack": ["Python", "PostgreSQL"],
+    "tags": ["ERP", "Business"],
+    "links": {
+      "github": "https://github.com/odoo/odoo",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.odoo.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Zammad",
+    "description": "Helpdesk and customer support system.",
+    "techStack": ["Ruby", "Rails"],
+    "tags": ["Helpdesk", "Support"],
+    "links": {
+      "github": "https://github.com/zammad/zammad",
+      "demo": "",
+      "youtube": "",
+      "web": "https://zammad.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "FreeScout",
+    "description": "Lightweight helpdesk and shared inbox.",
+    "techStack": ["PHP", "Laravel"],
+    "tags": ["Helpdesk", "Support"],
+    "links": {
+      "github": "https://github.com/freescout-helpdesk/freescout",
+      "demo": "",
+      "youtube": "",
+      "web": "https://freescout.net"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Ghost",
+    "description": "Open-source headless Node.js CMS.",
+    "techStack": ["Node.js", "JavaScript", "MySQL"],
+    "tags": ["CMS", "Blogging"],
+    "links": {
+      "github": "https://github.com/TryGhost/Ghost",
+      "demo": "",
+      "youtube": "",
+      "web": "https://ghost.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Strapi",
+    "description": "Open-source headless CMS.",
+    "techStack": ["Node.js", "JavaScript", "React"],
+    "tags": ["CMS", "Headless"],
+    "links": {
+      "github": "https://github.com/strapi/strapi",
+      "demo": "",
+      "youtube": "",
+      "web": "https://strapi.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "KeystoneJS",
+    "description": "Open-source headless CMS and framework.",
+    "techStack": ["Node.js", "TypeScript", "React"],
+    "tags": ["CMS", "Headless"],
+    "links": {
+      "github": "https://github.com/keystonejs/keystone",
+      "demo": "",
+      "youtube": "",
+      "web": "https://keystonejs.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Directus",
+    "description": "Headless CMS and API for managing SQL databases.",
+    "techStack": ["Node.js", "Vue.js", "MySQL"],
+    "tags": ["CMS", "API"],
+    "links": {
+      "github": "https://github.com/directus/directus",
+      "demo": "",
+      "youtube": "",
+      "web": "https://directus.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Netdata",
+    "description": "Real-time performance monitoring.",
+    "techStack": ["C", "JavaScript"],
+    "tags": ["Monitoring", "Performance"],
+    "links": {
+      "github": "https://github.com/netdata/netdata",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.netdata.cloud"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Prometheus",
+    "description": "Monitoring system & time series database.",
+    "techStack": ["Go"],
+    "tags": ["Monitoring", "Metrics"],
+    "links": {
+      "github": "https://github.com/prometheus/prometheus",
+      "demo": "",
+      "youtube": "",
+      "web": "https://prometheus.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Grafana",
+    "description": "Open-source analytics & monitoring platform.",
+    "techStack": ["Go", "TypeScript"],
+    "tags": ["Monitoring", "Visualization"],
+    "links": {
+      "github": "https://github.com/grafana/grafana",
+      "demo": "",
+      "youtube": "",
+      "web": "https://grafana.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Cacti",
+    "description": "Network graphing solution.",
+    "techStack": ["PHP", "MySQL"],
+    "tags": ["Monitoring", "Graphs"],
+    "links": {
+      "github": "https://github.com/Cacti/cacti",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.cacti.net"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Redmine",
+    "description": "Flexible project management web application.",
+    "techStack": ["Ruby on Rails", "MySQL"],
+    "tags": ["Project Management"],
+    "links": {
+      "github": "https://github.com/redmine/redmine",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.redmine.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Kanboard",
+    "description": "Project management software using Kanban methodology.",
+    "techStack": ["PHP", "SQLite"],
+    "tags": ["Project Management", "Kanban"],
+    "links": {
+      "github": "https://github.com/kanboard/kanboard",
+      "demo": "",
+      "youtube": "",
+      "web": "https://kanboard.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Taiga",
+    "description": "Agile project management platform.",
+    "techStack": ["Python", "Django", "AngularJS"],
+    "tags": ["Project Management", "Agile"],
+    "links": {
+      "github": "https://github.com/taigaio/taiga-back",
+      "demo": "",
+      "youtube": "",
+      "web": "https://taiga.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Sentry",
+    "description": "Error tracking and monitoring platform.",
+    "techStack": ["Python", "JavaScript"],
+    "tags": ["Monitoring", "Error Tracking"],
+    "links": {
+      "github": "https://github.com/getsentry/sentry",
+      "demo": "",
+      "youtube": "",
+      "web": "https://sentry.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Graylog",
+    "description": "Centralized log management.",
+    "techStack": ["Java", "MongoDB"],
+    "tags": ["Logging", "Monitoring"],
+    "links": {
+      "github": "https://github.com/Graylog2/graylog2-server",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.graylog.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Logstash",
+    "description": "Server‑side data processing pipeline.",
+    "techStack": ["Java"],
+    "tags": ["Logging", "ETL"],
+    "links": {
+      "github": "https://github.com/elastic/logstash",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.elastic.co/logstash"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Rocket.Chat",
+    "description": "Open-source team communication platform.",
+    "techStack": ["JavaScript", "Meteor", "MongoDB"],
+    "tags": ["Chat", "Collaboration"],
+    "links": {
+      "github": "https://github.com/RocketChat/Rocket.Chat",
+      "demo": "",
+      "youtube": "",
+      "web": "https://rocket.chat"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Mattermost",
+    "description": "Secure messaging platform.",
+    "techStack": ["Go", "React"],
+    "tags": ["Chat", "Collaboration"],
+    "links": {
+      "github": "https://github.com/mattermost/mattermost-server",
+      "demo": "",
+      "youtube": "",
+      "web": "https://mattermost.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Zulip",
+    "description": "Open-source team chat app.",
+    "techStack": ["Python", "Django", "JavaScript"],
+    "tags": ["Chat", "Collaboration"],
+    "links": {
+      "github": "https://github.com/zulip/zulip",
+      "demo": "",
+      "youtube": "",
+      "web": "https://zulip.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Nextcloud",
+    "description": "Self-hosted file sync & share platform.",
+    "techStack": ["PHP", "JavaScript"],
+    "tags": ["File Sharing", "Collaboration"],
+    "links": {
+      "github": "https://github.com/nextcloud/server",
+      "demo": "",
+      "youtube": "",
+      "web": "https://nextcloud.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "OwnCloud",
+    "description": "File sync and share server software.",
+    "techStack": ["PHP", "MySQL"],
+    "tags": ["File Sharing", "Collaboration"],
+    "links": {
+      "github": "https://github.com/owncloud/core",
+      "demo": "",
+      "youtube": "",
+      "web": "https://owncloud.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "OpenProject",
+    "description": "Project management software.",
+    "techStack": ["Ruby on Rails", "AngularJS"],
+    "tags": ["Project Management"],
+    "links": {
+      "github": "https://github.com/opf/openproject",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.openproject.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "LibreOffice Online",
+    "description": "Cloud version of LibreOffice office suite.",
+    "techStack": ["C++", "JavaScript"],
+    "tags": ["Office", "Collaboration"],
+    "links": {
+      "github": "https://github.com/LibreOffice/online",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.libreoffice.org/download/libreoffice-online/"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "ONLYOFFICE",
+    "description": "Office suite for document, spreadsheet & presentation editing.",
+    "techStack": ["JavaScript", "PHP"],
+    "tags": ["Office", "Collaboration"],
+    "links": {
+      "github": "https://github.com/ONLYOFFICE/DocumentServer",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.onlyoffice.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "PeerTube",
+    "description": "Decentralized video hosting network.",
+    "techStack": ["Node.js", "PostgreSQL"],
+    "tags": ["Video", "Decentralized"],
+    "links": {
+      "github": "https://github.com/Chocobozzz/PeerTube",
+      "demo": "",
+      "youtube": "",
+      "web": "https://joinpeertube.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Jitsi Meet",
+    "description": "Secure video conferencing platform.",
+    "techStack": ["JavaScript", "React"],
+    "tags": ["Video Conferencing", "Communication"],
+    "links": {
+      "github": "https://github.com/jitsi/jitsi-meet",
+      "demo": "",
+      "youtube": "",
+      "web": "https://jitsi.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "CryptPad",
+    "description": "Encrypted collaborative office suite.",
+    "techStack": ["JavaScript", "OCaml"],
+    "tags": ["Collaboration", "Encryption"],
+    "links": {
+      "github": "https://github.com/cryptpad/cryptpad",
+      "demo": "",
+      "youtube": "",
+      "web": "https://cryptpad.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Mastodon",
+    "description": "Federated social network server.",
+    "techStack": ["Ruby on Rails", "JavaScript"],
+    "tags": ["Social", "Federated"],
+    "links": {
+      "github": "https://github.com/mastodon/mastodon",
+      "demo": "",
+      "youtube": "",
+      "web": "https://joinmastodon.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Pleroma",
+    "description": "Lightweight federated social networking server.",
+    "techStack": ["Elixir", "Erlang"],
+    "tags": ["Social", "Federated"],
+    "links": {
+      "github": "https://github.com/pleroma/pleroma",
+      "demo": "",
+      "youtube": "",
+      "web": "https://pleroma.social"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Friendica",
+    "description": "Decentralized social networking platform.",
+    "techStack": ["PHP", "MySQL"],
+    "tags": ["Social", "Federated"],
+    "links": {
+      "github": "https://github.com/friendica/friendica",
+      "demo": "",
+      "youtube": "",
+      "web": "https://friendi.ca"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "HumHub",
+    "description": "Social network software kit.",
+    "techStack": ["PHP", "Yii2 Framework"],
+    "tags": ["Social", "Collaboration"],
+    "links": {
+      "github": "https://github.com/humhub/humhub",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.humhub.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "ERPNext",
+    "description": "Open-source ERP system with accounting, HR, CRM.",
+    "techStack": ["Python", "MariaDB"],
+    "tags": ["ERP", "Business"],
+    "links": {
+      "github": "https://github.com/frappe/erpnext",
+      "demo": "",
+      "youtube": "",
+      "web": "https://erpnext.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Odoo",
+    "description": "All-in-one business management software.",
+    "techStack": ["Python", "PostgreSQL"],
+    "tags": ["ERP", "Business"],
+    "links": {
+      "github": "https://github.com/odoo/odoo",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.odoo.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "SuiteCRM",
+    "description": "Customer relationship management software.",
+    "techStack": ["PHP", "MySQL"],
+    "tags": ["CRM", "Business"],
+    "links": {
+      "github": "https://github.com/salesagility/SuiteCRM",
+      "demo": "",
+      "youtube": "",
+      "web": "https://suitecrm.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Zammad",
+    "description": "Web-based helpdesk and customer support system.",
+    "techStack": ["Ruby on Rails", "Elasticsearch"],
+    "tags": ["Helpdesk", "Support"],
+    "links": {
+      "github": "https://github.com/zammad/zammad",
+      "demo": "",
+      "youtube": "",
+      "web": "https://zammad.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "FreeScout",
+    "description": "Lightweight helpdesk and shared inbox.",
+    "techStack": ["PHP", "Laravel"],
+    "tags": ["Helpdesk", "Support"],
+    "links": {
+      "github": "https://github.com/freescout-helpdesk/freescout",
+      "demo": "",
+      "youtube": "",
+      "web": "https://freescout.net"
+    }
+  },
+  {
+    "bgImg": "https://user-images.githubusercontent.com/9268745/224249510-d3c7658e-6d5c-42c5-b4fb-93eaf65a5335.png",
+    "title": "Saleor",
+    "description": "GraphQL-first headless e-commerce platform built with React and Django.",
+    "techStack": ["React", "Django", "GraphQL", "TypeScript"],
+    "tags": ["GraphQL", "Headless"],
+    "links": {
+      "github": "https://github.com/saleor/saleor",
+      "demo": "https://demo.saleor.io",
+      "youtube": "",
+      "web": "https://saleor.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Medusa",
+    "description": "Open-source Node.js headless e-commerce with admin dashboard and integrations.",
+    "techStack": ["Node.js", "PostgreSQL", "React", "Next.js"],
+    "tags": ["Headless", "Modular"],
+    "links": {
+      "github": "https://github.com/medusajs/medusa",
+      "demo": "https://demo.medusajs.com",
+      "youtube": "",
+      "web": "https://medusajs.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Shopyo",
+    "description": "Modular Flask-based e-commerce platform with admin panel.",
+    "techStack": ["Python", "Flask", "SQLite"],
+    "tags": ["Lightweight", "Python"],
+    "links": {
+      "github": "https://github.com/Abdur-rahmaanJ/shopyo",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Vendure",
+    "description": "Headless e-commerce framework with NestJS and GraphQL.",
+    "techStack": ["NestJS", "GraphQL", "TypeScript", "PostgreSQL"],
+    "tags": ["TypeScript", "Headless"],
+    "links": {
+      "github": "https://github.com/vendure-ecommerce/vendure",
+      "demo": "https://demo.vendure.io",
+      "youtube": "",
+      "web": "https://vendure.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Spree Commerce",
+    "description": "Ruby on Rails e-commerce platform with multi-store support.",
+    "techStack": ["Ruby on Rails", "PostgreSQL", "React"],
+    "tags": ["Rails", "Scalable"],
+    "links": {
+      "github": "https://github.com/spree/spree",
+      "demo": "",
+      "youtube": "",
+      "web": "https://spreecommerce.org"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Reaction Commerce",
+    "description": "Real-time e-commerce platform with React, Node.js, and MongoDB.",
+    "techStack": ["React", "Node.js", "MongoDB", "GraphQL"],
+    "tags": ["Real-time", "Microservices"],
+    "links": {
+      "github": "https://github.com/reactioncommerce/reaction",
+      "demo": "",
+      "youtube": "",
+      "web": "https://reactioncommerce.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Next.js Commerce",
+    "description": "Next.js e-commerce template with Tailwind CSS and Vercel integration.",
+    "techStack": ["Next.js", "Tailwind CSS", "TypeScript"],
+    "tags": ["JAMstack", "Vercel"],
+    "links": {
+      "github": "https://github.com/vercel/commerce",
+      "demo": "https://demo.vercel.store",
+      "youtube": "",
+      "web": "https://vercel.com/commerce"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Gatsby + Shopify Starter",
+    "description": "JAMstack e-commerce with Gatsby and Shopify as a backend.",
+    "techStack": ["Gatsby", "Shopify", "React", "GraphQL"],
+    "tags": ["JAMstack", "Shopify"],
+    "links": {
+      "github": "https://github.com/AlexanderProd/gatsby-shopify-starter",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+
+  {
+    "bgImg": "",
+    "title": "Vue Storefront",
+    "description": "PWA for e-commerce with Vue.js and headless backend support.",
+    "techStack": ["Vue.js", "Nuxt.js", "GraphQL"],
+    "tags": ["PWA", "Headless"],
+    "links": {
+      "github": "https://github.com/vuestorefront/vue-storefront",
+      "demo": "https://demo.vuestorefront.io",
+      "youtube": "",
+      "web": "https://vuestorefront.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "React Storefront",
+    "description": "Progressive Web App (PWA) e-commerce platform built with React.",
+    "techStack": ["React", "Node.js", "PWA", "Express"],
+    "tags": ["PWA", "React"],
+    "links": {
+      "github": "https://github.com/storefront-foundation/react-storefront",
+      "demo": "",
+      "youtube": "",
+      "web": "https://reactstorefront.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Next.js + Shopify Starter",
+    "description": "Headless e-commerce using Next.js with Shopify backend.",
+    "techStack": ["Next.js", "Shopify", "GraphQL", "Tailwind CSS"],
+    "tags": ["JAMstack", "Shopify"],
+    "links": {
+      "github": "https://github.com/btahir/next-shopify-starter",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Gatsby + Shopify Starter",
+    "description": "JAMstack e-commerce with Gatsby and Shopify integration.",
+    "techStack": ["Gatsby", "Shopify", "React", "GraphQL"],
+    "tags": ["JAMstack", "Shopify"],
+    "links": {
+      "github": "https://github.com/AlexanderProd/gatsby-shopify-starter",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+
+  {
+    "bgImg": "",
+    "title": "React + Firebase E-commerce",
+    "description": "E-commerce cart system with React and Firebase.",
+    "techStack": ["React", "Firebase", "Redux"],
+    "tags": ["Firebase", "React"],
+    "links": {
+      "github": "https://github.com/jeffersonRibeiro/react-shopping-cart",
+      "demo": "https://react-shopping-cart-67954.firebaseapp.com",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Vue Storefront",
+    "description": "PWA for e-commerce with Vue.js and headless backend support.",
+    "techStack": ["Vue.js", "Nuxt.js", "GraphQL"],
+    "tags": ["PWA", "Headless"],
+    "links": {
+      "github": "https://github.com/vuestorefront/vue-storefront",
+      "demo": "https://demo.vuestorefront.io",
+      "youtube": "",
+      "web": "https://vuestorefront.io"
+    }
+  },
+
+  {
+    "bgImg": "",
+    "title": "Vue + Node.js + MongoDB",
+    "description": "E-commerce app with Vue.js, Node.js, and MongoDB.",
+    "techStack": ["Vue.js", "Node.js", "MongoDB", "Express"],
+    "tags": ["MEVN", "Full-stack"],
+    "links": {
+      "github": "https://github.com/sdras/ecommerce-netlify",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Vue + Laravel E-commerce",
+    "description": "Full-stack e-commerce with Vue.js frontend and Laravel backend.",
+    "techStack": ["Vue.js", "Laravel", "MySQL"],
+    "tags": ["Laravel", "Vue"],
+    "links": {
+      "github": "https://github.com/avil13/vue-sweetalert2",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Vue + Firebase",
+    "description": "E-commerce demo with Vue.js and Firebase real-time database.",
+    "techStack": ["Vue.js", "Firebase", "Vuex"],
+    "tags": ["Firebase", "Realtime"],
+    "links": {
+      "github": "https://github.com/sdras/page-transitions-travelapp",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Angular + Node.js E-commerce",
+    "description": "Full-stack e-commerce with Angular and Node.js.",
+    "techStack": ["Angular", "Node.js", "Express", "MongoDB"],
+    "tags": ["MEAN", "Full-stack"],
+    "links": {
+      "github": "https://github.com/NodeArt/angular-commerce",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Angular + Firebase",
+    "description": "E-commerce app with Angular and Firebase backend.",
+    "techStack": ["Angular", "Firebase", "RxJS"],
+    "tags": ["Firebase", "Angular"],
+    "links": {
+      "github": "https://github.com/avatsaev/angular-contacts-app-example",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Django Oscar",
+    "description": "Domain-driven e-commerce framework for Django.",
+    "techStack": ["Django", "Python", "PostgreSQL"],
+    "tags": ["Django", "Modular"],
+    "links": {
+      "github": "https://github.com/django-oscar/django-oscar",
+      "demo": "",
+      "youtube": "",
+      "web": "https://django-oscar.readthedocs.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Shuup",
+    "description": "Modular Django e-commerce platform with admin dashboard.",
+    "techStack": ["Django", "Python", "MySQL"],
+    "tags": ["Django", "Admin UI"],
+    "links": {
+      "github": "https://github.com/shuup/shuup",
+      "demo": "",
+      "youtube": "",
+      "web": "https://shuup.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Mezzanine + Cartridge",
+    "description": "Django-based e-commerce with CMS integration.",
+    "techStack": ["Django", "Python", "SQLite"],
+    "tags": ["CMS", "Django"],
+    "links": {
+      "github": "https://github.com/stephenmcd/cartridge",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Bagisto",
+    "description": "Laravel e-commerce platform with multi-channel support.",
+    "techStack": ["Laravel", "PHP", "MySQL", "Vue.js"],
+    "tags": ["Laravel", "Multi-channel"],
+    "links": {
+      "github": "https://github.com/bagisto/bagisto",
+      "demo": "https://demo.bagisto.com",
+      "youtube": "",
+      "web": "https://bagisto.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Aimeos Laravel",
+    "description": "High-performance e-commerce for Laravel.",
+    "techStack": ["Laravel", "PHP", "MySQL", "React"],
+    "tags": ["Laravel", "High-performance"],
+    "links": {
+      "github": "https://github.com/aimeos/aimeos-laravel",
+      "demo": "",
+      "youtube": "",
+      "web": "https://aimeos.org/laravel"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Laravel Ecommerce",
+    "description": "Shopping cart system for Laravel with Stripe integration.",
+    "techStack": ["Laravel", "PHP", "MySQL", "Stripe"],
+    "tags": ["Laravel", "Stripe"],
+    "links": {
+      "github": "https://github.com/darryldecode/laravelshoppingcart",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Sylius",
+    "description": "Headless e-commerce framework for Symfony.",
+    "techStack": ["Symfony", "PHP", "MySQL", "React"],
+    "tags": ["Symfony", "Headless"],
+    "links": {
+      "github": "https://github.com/Sylius/Sylius",
+      "demo": "https://demo.sylius.com",
+      "youtube": "",
+      "web": "https://sylius.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Broadleaf Commerce",
+    "description": "Enterprise-grade Java e-commerce platform.",
+    "techStack": ["Java", "Spring Boot", "Hibernate", "Thymeleaf"],
+    "tags": ["Java", "Enterprise"],
+    "links": {
+      "github": "https://github.com/BroadleafCommerce/BroadleafCommerce",
+      "demo": "",
+      "youtube": "",
+      "web": "https://broadleafcommerce.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Shopizer",
+    "description": "Java/Spring Boot e-commerce with React frontend.",
+    "techStack": ["Java", "Spring Boot", "React", "MySQL"],
+    "tags": ["Spring Boot", "React"],
+    "links": {
+      "github": "https://github.com/shopizer-ecommerce/shopizer",
+      "demo": "",
+      "youtube": "",
+      "web": "https://shopizer.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Solidus",
+    "description": "Ruby on Rails e-commerce platform (Spree fork).",
+    "techStack": ["Ruby on Rails", "PostgreSQL", "Stripe"],
+    "tags": ["Rails", "Stripe"],
+    "links": {
+      "github": "https://github.com/solidusio/solidus",
+      "demo": "",
+      "youtube": "",
+      "web": "https://solidus.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Solidus",
+    "description": "Ruby on Rails e-commerce platform (fork of Spree Commerce).",
+    "techStack": ["Ruby on Rails", "PostgreSQL", "Stripe"],
+    "tags": ["Rails", "Stripe"],
+    "links": {
+      "github": "https://github.com/solidusio/solidus",
+      "demo": "",
+      "youtube": "",
+      "web": "https://solidus.io"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "PrestaShop",
+    "description": "PHP-based e-commerce platform with 300k+ merchants.",
+    "techStack": ["PHP", "MySQL", "Symfony"],
+    "tags": ["PHP", "Enterprise"],
+    "links": {
+      "github": "https://github.com/PrestaShop/PrestaShop",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.prestashop.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Magento Open Source",
+    "description": "Adobe's open-source e-commerce platform (formerly Magento 2).",
+    "techStack": ["PHP", "MySQL", "React"],
+    "tags": ["Enterprise", "Scalable"],
+    "links": {
+      "github": "https://github.com/magento/magento2",
+      "demo": "",
+      "youtube": "",
+      "web": "https://business.adobe.com/products/magento/open-source.html"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "OpenCart",
+    "description": "PHP e-commerce platform with a simple admin interface.",
+    "techStack": ["PHP", "MySQL"],
+    "tags": ["Lightweight", "PHP"],
+    "links": {
+      "github": "https://github.com/opencart/opencart",
+      "demo": "",
+      "youtube": "",
+      "web": "https://www.opencart.com"
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "nopCommerce",
+    "description": ".NET-based e-commerce platform with multi-store support.",
+    "techStack": [".NET", "SQL Server", "Entity Framework"],
+    "tags": [".NET", "Scalable"],
+    "links": {
+      "github": "https://github.com/nopSolutions/nopCommerce",
+      "demo": "https://demo.nopcommerce.com",
+      "youtube": "",
+      "web": "https://www.nopcommerce.com"
+    }
+  },
+
+  {
+    "bgImg": "",
+    "title": "React + Express E-commerce",
+    "description": "Full-stack e-commerce with React, Express, and MongoDB.",
+    "techStack": ["React", "Express", "MongoDB", "JWT"],
+    "tags": ["MERN", "JWT"],
+    "links": {
+      "github": "https://github.com/atulmy/fullstack-graphql",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+
+  {
+    "bgImg": "",
+    "title": "Django + React E-commerce",
+    "description": "Full-stack e-commerce with Django REST and React frontend.",
+    "techStack": ["Django", "React", "PostgreSQL"],
+    "tags": ["Django", "React"],
+    "links": {
+      "github": "https://github.com/justdjango/django-ecommerce",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "Laravel + Vue E-commerce",
+    "description": "Full-stack e-commerce with Laravel backend and Vue.js frontend.",
+    "techStack": ["Laravel", "Vue.js", "MySQL"],
+    "tags": ["Laravel", "Vue"],
+    "links": {
+      "github": "https://github.com/laravel-enso/enso",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+
+  {
+    "bgImg": "",
+    "title": "Strapi + Nuxt.js E-commerce",
+    "description": "Headless e-commerce with Strapi CMS and Nuxt.js frontend.",
+    "techStack": ["Strapi", "Nuxt.js", "GraphQL"],
+    "tags": ["Headless", "Strapi"],
+    "links": {
+      "github": "https://github.com/strapi/strapi-starter-nuxt-e-commerce",
+      "demo": "",
+      "youtube": "",
+      "web": ""
+    }
+  },
+  {
+    "bgImg": "",
+    "title": "KeystoneJS E-commerce",
+    "description": "Headless e-commerce with KeystoneJS (Node.js) and GraphQL.",
+    "techStack": ["KeystoneJS", "GraphQL", "React"],
+    "tags": ["Headless", "GraphQL"],
+    "links": {
+      "github": "https://github.com/keystonejs/keystone",
+      "demo": "",
+      "youtube": "",
+      "web": "https://keystonejs.com"
+    }
+  },
+
+  {
+    "bgImg": "",
+    "title": "Headless WooCommerce",
+    "description": "React frontend for WooCommerce using REST API.",
+    "techStack": ["React", "WooCommerce", "REST API"],
+    "tags": ["WooCommerce", "Headless"],
+    "links": {
+      "github": "https://github.com/imranhsayed/woo-next",
+      "demo": "https://woo-next-imranhsayed.vercel.app/",
+      "youtube": "",
+      "web": ""
+    }
+  }
+]
