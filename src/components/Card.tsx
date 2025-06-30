@@ -16,7 +16,7 @@ export default function Card({
     return (
         <div className="p-4 ">
             <Link href={links.github || links.demo || links.youtube || 'mmtareque.com'} target='_blank'>
-                <div className="flex items-stretch justify-between gap-4 rounded-lg bg-[#1a2632] p-4 shadow-[0_0_4px_rgba(0,0,0,0.1)] cursor-pointer">
+                <div className="flex flex-col md:flex-row items-stretch justify-between gap-4 rounded-lg bg-[#1a2632] p-4 shadow-[0_0_4px_rgba(0,0,0,0.1)] cursor-pointer">
 
                     <div
                         className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"

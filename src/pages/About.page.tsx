@@ -1,12 +1,32 @@
+import { BASE } from '@/app/(public)/layout'
 import Head from 'next/head'
 import React from 'react'
 
 export default function About() {
+  
   return (
     <>
       <Head>
         <title>About | Open Source Projects</title>
+        <meta name="description" content="Learn more about Open Source Projects, a platform that curates, categorizes, and highlights the best open source repositories for developers to learn and contribute." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href={BASE} />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`${BASE}/about`} />
+        <meta property="og:title" content="About | Open Source Projects" />
+        <meta property="og:description" content="Explore our mission to support open source collaboration and contribution with curated project listings and community tools." />
+        <meta property="og:image"  content={`${BASE}/default.png`} />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content={`${BASE}/about`}  />
+        <meta name="twitter:title" content="About | Open Source Projects" />
+        <meta name="twitter:description" content="Explore our mission to support open source collaboration and contribution with curated project listings and community tools." />
+        <meta name="twitter:image" content={`${BASE}/default.png`} />
       </Head>
+
       <main className="max-w-4xl mx-auto py-10 px-4">
         <h1 className="text-4xl font-bold mb-4">About This Site</h1>
         <p className="text-lg text-gray-600 mb-6">
