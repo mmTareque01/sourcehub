@@ -36,34 +36,34 @@ export default function Card({
                                     {(links.github || links.demo || links.youtube) && (
                                         <div className="flex gap-4 mt-2 ">
                                             {links.github && (
-                                                <a
+                                                <Link
                                                     href={links.github}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
                                                     className="hover:text-blue-400"
                                                 >
                                                     <FaGithub size={18} />
-                                                </a>
+                                                </Link>
                                             )}
                                             {links.demo && (
-                                                <a
+                                                <Link
                                                     href={links.demo}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
                                                     className="hover:text-green-400"
                                                 >
                                                     <FaExternalLinkAlt size={18} />
-                                                </a>
+                                                </Link>
                                             )}
                                             {links.youtube && (
-                                                <a
+                                                <Link
                                                     href={links.youtube}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
                                                     className="hover:text-red-400"
                                                 >
                                                     <FaYoutube size={18} />
-                                                </a>
+                                                </Link>
                                             )}
                                         </div>
                                     )}
@@ -75,26 +75,7 @@ export default function Card({
 
                         </div>
                         <div className='flex items-center justify-between'>
-                            {/* <div>
-                            <button
-                                className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#243647]  text-sm font-medium leading-normal w-fit"
-                            >
-                                <span className="truncate">View Project</span>
-                            </button>
-                        </div> */}
-
-                            {/* {techStack.length > 0 && (
-                                <div className="flex flex-nowrap gap-2 overflow-hidden">
-                                    {techStack.map((tech, idx) => (
-                                        <span
-                                            key={idx}
-                                            className="bg-white/10 text-xs px-2 py-1 rounded-md whitespace-nowrap"
-                                        >
-                                            {tech}
-                                        </span>
-                                    ))}
-                                </div>
-                            )} */}
+                   
 
 
                             <div className="relative max-w-full overflow-hidden">
