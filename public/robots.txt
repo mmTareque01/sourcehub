@@ -1,3 +1,9 @@
+# *
 User-agent: *
 Allow: /
-Sitemap: https://https://opensourcehub.xyz/sitemap.xml
+
+# Host
+Host: https://opensourcehub.xyz
+
+# Sitemaps
+Sitemap: https://opensourcehub.xyz/sitemap.xml

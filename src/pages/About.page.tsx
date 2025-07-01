@@ -1,4 +1,4 @@
-import { BASE } from '@/app/(public)/layout'
+import { BASE } from '@/libs/base'
 import Head from 'next/head'
 import React from 'react'
 

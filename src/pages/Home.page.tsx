@@ -1,7 +1,7 @@
-import { BASE } from "@/app/(public)/layout";
 import Hero from "@/components/Hero";
 import ProjectsList from "@/components/ProjectsList";
 import Wrapper from "@/components/Wrapper";
+import { BASE } from "@/libs/base";
 import Head from "next/head";
 
 export default async function HomePage({ page = 1, q = '' }: { page?: number, q?: string }) {

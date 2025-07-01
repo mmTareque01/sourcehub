@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
+ export const metadata: Metadata = {
   title: "Open Source SaaS",
   description: "Discover Open Source SaaS Projects",
   themeColor: "#ffffff",
@@ -26,9 +26,8 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
 };
 
-export const BASE = 'https://opensourcehub.xyz';
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
