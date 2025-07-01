@@ -8,6 +8,7 @@ export interface ProjectType extends Record<string, string | number | boolean> {
   tags?: string[]; // e.g., ['UI', 'Portfolio']
   created_at?: string;
   status?: string;
+  slug?: string;
   links: {
     github: string;
     demo?: string;

@@ -10,14 +10,44 @@ export default async function HomePage({ page = 1, q = '' }: { page?: number, q?
   // Example project items (replace with real project data for dynamic structured data)
   const structuredProjects = [
     {
-      name: "Next.js SaaS Boilerplate",
-      url: `${BASE}/project/nextjs-saas`,
+      name: "Realtime Chat Application",
+      url: `${BASE}/project/realtime-chat-application`,
       position: 1
     },
     {
-      name: "Laravel CRM Starter",
-      url: `${BASE}/project/laravel-crm`,
+      name: "A HealthCare Management System",
+      url: `${BASE}/project/healthcare-management-system`,
       position: 2
+    },
+    {
+      name: "Uber clone",
+      url: `${BASE}/project/uber-clone`,
+      position: 3
+    },
+    {
+      name: "Microsoft teams clone",
+      url: `${BASE}/project/ms-team-clone`,
+      position: 4
+    },
+    {
+      name: "Video Sharing App",
+      url: `${BASE}/project/video-sharing-app`,
+      position: 5
+    },
+    {
+      name: "A Social Media Application",
+      url: `${BASE}/project/social-media-application`,
+      position: 6
+    },
+    {
+      name: "AI Podcast Platform",
+      url: `${BASE}/project/ai-podcast-platform`,
+      position: 7
+    },
+    {
+      name: "A CRM Dashboard",
+      url: `${BASE}/project/a-crm-dashboard`,
+      position: 8
     }
   ];
 

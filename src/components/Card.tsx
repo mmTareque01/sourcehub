@@ -7,6 +7,7 @@ export default function Card({
     bgImg,
     title,
     description,
+    slug,
     techStack = [],
     links = {
         github: ''
@@ -15,7 +16,11 @@ export default function Card({
 
     return (
         <div className="p-4 ">
-            <Link href={links.github || links.demo || links.youtube || 'mmtareque.com'} target='_blank'>
+            <Link 
+            href={`/project/${slug}`}
+            // href={links.github || links.demo || links.youtube || 'mmtareque.com'} 
+            // target='_blank'
+            >
                 <div className="flex flex-col md:flex-row items-stretch justify-between gap-4 rounded-lg bg-[#1a2632] p-4 shadow-[0_0_4px_rgba(0,0,0,0.1)] cursor-pointer">
 
                     <div
@@ -64,9 +69,10 @@ export default function Card({
                                     )}
                                 </div>
                             </div>
-                            <p className="text-[#93adc8] text-sm font-normal leading-normal mt-4">
+                            <p className="text-[#93adc8] text-sm font-normal leading-normal mt-4 line-clamp-3">
                                 {description}
                             </p>
+
                         </div>
                         <div className='flex items-center justify-between'>
                             {/* <div>
@@ -77,18 +83,36 @@ export default function Card({
                             </button>
                         </div> */}
 
-                            {techStack.length > 0 && (
-                                <div className="flex flex-wrap gap-2 max-h-20 overflow-hidden">
+                            {/* {techStack.length > 0 && (
+                                <div className="flex flex-nowrap gap-2 overflow-hidden">
                                     {techStack.map((tech, idx) => (
                                         <span
                                             key={idx}
-                                            className="bg-white/10  text-xs px-2 py-1 rounded-md"
+                                            className="bg-white/10 text-xs px-2 py-1 rounded-md whitespace-nowrap"
                                         >
                                             {tech}
                                         </span>
                                     ))}
                                 </div>
-                            )}
+                            )} */}
+
+
+                            <div className="relative max-w-full overflow-hidden">
+                                <div className="flex flex-nowrap gap-2">
+                                    {techStack.map((tech, idx) => (
+                                        <span
+                                            key={idx}
+                                            className="bg-white/10 text-xs px-2 py-1 rounded-md whitespace-nowrap"
+                                        >
+                                            {tech}
+                                        </span>
+                                    ))}
+                                </div>
+                                {/* Optional gradient fade */}
+                                <div className="absolute right-0 top-0 h-full w-12 bg-gradient-to-l from-[#0f172a] to-transparent"></div>
+                            </div>
+
+
                         </div>
 
                     </div>
@@ -97,86 +121,4 @@ export default function Card({
             </Link>
         </div>
     )
-
-
-    //  Grid model card
-    // return (
-    //     <div className="flex flex-col gap-3 pb-3">
-    //         <div
-    //             className="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
-    //             style={{ backgroundImage: `url("${bgImg}")` }}
-    //         ></div>
-
-    //         <div className="flex flex-col gap-2">
-    //             <p className=" text-base font-medium leading-normal mb-4 line-clamp-2">
-    //                 {title}
-    //             </p>
-
-    //             <p className="text-[#90accb] text-sm font-normal leading-normal mb-10 line-clamp-5">
-    //                 {description}
-    //             </p>
-
-    //             {techStack.length > 0 && (
-    //                 <div className="flex flex-wrap gap-2 max-h-20 overflow-hidden">
-    //                     {techStack.map((tech, idx) => (
-    //                         <span
-    //                             key={idx}
-    //                             className="bg-white/10  text-xs px-2 py-1 rounded-md"
-    //                         >
-    //                             {tech}
-    //                         </span>
-    //                     ))}
-    //                 </div>
-    //             )}
-
-    //             {tags.length > 0 && (
-    //                 <div className="flex flex-wrap gap-2 max-h-20 overflow-hidden">
-    //                     {tags.map((tag, idx) => (
-    //                         <span
-    //                             key={idx}
-    //                             className="bg-blue-500/20 text-blue-300 text-xs px-2 py-1 rounded-md"
-    //                         >
-    //                             #{tag}
-    //                         </span>
-    //                     ))}
-    //                 </div>
-    //             )}
-
-    //             {(links.github || links.demo || links.youtube) && (
-    //                 <div className="flex gap-4 mt-2 ">
-    //                     {links.github && (
-    //                         <a
-    //                             href={links.github}
-    //                             target="_blank"
-    //                             rel="noopener noreferrer"
-    //                             className="hover:text-blue-400"
-    //                         >
-    //                             <FaGithub size={18} />
-    //                         </a>
-    //                     )}
-    //                     {links.demo && (
-    //                         <a
-    //                             href={links.demo}
-    //                             target="_blank"
-    //                             rel="noopener noreferrer"
-    //                             className="hover:text-green-400"
-    //                         >
-    //                             <FaExternalLinkAlt size={18} />
-    //                         </a>
-    //                     )}
-    //                     {links.youtube && (
-    //                         <a
-    //                             href={links.youtube}
-    //                             target="_blank"
-    //                             rel="noopener noreferrer"
-    //                             className="hover:text-red-400"
-    //                         >
-    //                             <FaYoutube size={18} />
-    //                         </a>
-    //                     )}
-    //                 </div>
-    //             )}
-    //         </div>
-    //     </div>
-    // )
 }
