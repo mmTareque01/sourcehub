@@ -29,7 +29,6 @@ async function createRouter(options: RouterOptions) {
   // Create directory
   try {
     await fs.mkdir(fullPath, { recursive: true });
-    console.log(`Created directory: ${fullPath}`);
   } catch (err) {
     throw new Error(`Error creating directory: ${err instanceof Error ? err.message : String(err)}`);
   }
@@ -57,12 +56,10 @@ async function createRouter(options: RouterOptions) {
 
   try {
     await fs.writeFile(filePath, fileContent);
-    console.log(`Created ${type} file: ${filePath}`);
   } catch (err) {
     throw new Error(`Error creating ${type} file: ${err instanceof Error ? err.message : String(err)}`);
   }
 
-  console.log(`Successfully created ${type}: ${root}/${name}`);
 }
 
 // Parse command line arguments

@@ -35,7 +35,7 @@ export default function ContactUs() {
                 setStatus("error");
             }
         } catch (e) {
-            console.log(e)
+            console.error(e)
             setStatus("error");
         }
     };

@@ -51,11 +51,8 @@ export const useProjectStore = create<ProjectState>((set, get) => ({
     })),
 
   getProjectById: (id) => {
-    console.log({ id });
     const state = get();
     const data = state.projects.find((type) => type.id === id);
-    console.log({ state: state.projects });
-    console.log({ data });
     return data; //state.projects.find((type) => type.id === id);
   },
   setProjectPagination: (pagination) => set({ projectPagination: pagination }),

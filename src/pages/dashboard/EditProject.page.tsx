@@ -39,7 +39,7 @@ export default function EditProject({ projectId }: { projectId: string }) {
             }
         }
         const updated = await handleUpdateProject(project.id as string, formData as ProjectType)
-        console.log({ updated })
+   
         if (updated) {
 
             alert('updated data')
@@ -87,7 +87,6 @@ export default function EditProject({ projectId }: { projectId: string }) {
             const links = ['github', 'demo', 'youtube'] as const;
 
             type LinkKey = typeof links[number]; // "github" | "demo" | "youtube"
-            console.log({ fieldName })
             if (links.includes(fieldName as LinkKey)) {
                 const key = fieldName as LinkKey;
                 value = project.links?.[key] ?? "";
@@ -96,7 +95,6 @@ export default function EditProject({ projectId }: { projectId: string }) {
                 value = (project?.techStack as string[])?.join(', ');
             }
             else if (Array.isArray(project[fieldName])) {
-                console.log({ fieldName, data: project[fieldName], project })
                 value = project[fieldName].join(', ')
             } else {
                 value = project[field.name] as string; ///project?.[fieldName as keyof SubmitProjectFormProps];
@@ -115,10 +113,8 @@ export default function EditProject({ projectId }: { projectId: string }) {
             if (projectId) {
                 setLoading(true);
                 const result = await handleGetProjectById(projectId); // fetch & store project
-                console.log({ result })
                 setApiSuccess(result)
-                console.log({ apiSuccess })
-                // setLoading(false);
+               
             }
         };
 
@@ -126,7 +122,6 @@ export default function EditProject({ projectId }: { projectId: string }) {
     }, [projectId]); // Run on mount or if projectId changes
 
     useEffect(() => {
-        console.log({ apiSuccess })
         if (apiSuccess) {
             setFields(getFormFieldsWithDefaults(project as SubmitProjectFormProps));
             setLoading(false);
@@ -153,7 +148,6 @@ export default function EditProject({ projectId }: { projectId: string }) {
                     // fields={getFormFieldsWithDefaults(project as SubmitProjectFormProps)}
                     fields={fields}
                     onSubmit={(data) => {
-                        console.log('logging')
                         handleSubmit(data as SubmitProjectFormProps)
                     }}
                     submitText='Update Project'

@@ -11,7 +11,6 @@ export default function SidebarWidget() {
             <Button
               // href={'/'}
               onClick={async () => {
-                console.log('cliekded')
                 await supabase.auth.signOut();
                 // router.push('/login')
                 // router.refresh();

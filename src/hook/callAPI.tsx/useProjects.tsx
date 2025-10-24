@@ -24,7 +24,7 @@ export function useProjects() {
 
     }
     catch (error) {
-      console.log(error)
+      console.error(error)
     }
   };
 
@@ -32,12 +32,11 @@ export function useProjects() {
   const handleGetProjectById = async (id: string) => {
     try {
       const projects = await getProjectById(id)
-      console.log({projects})
       setProject(projects)
       return true;
     }
     catch (error) {
-      console.log(error)
+      console.error(error)
       return false
     }
   };
@@ -54,11 +53,10 @@ export function useProjects() {
 
     try {
       const newsletterTypes = await updateProjectById(id, data)
-      console.log({ newsletterTypes })
       return newsletterTypes;
     }
     catch (error) {
-      console.log(error);
+      console.error(error);
       return false
     }
   };

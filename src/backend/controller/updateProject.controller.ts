@@ -12,7 +12,6 @@ export const updateProjectById = async (id: string, updatedData: ProjectType) =>
     console.error("Error updating data:", error);
     throw new Error("Failed to update project");
   } else {
-    console.log("Update successful:", data);
     return data;
   }
 };

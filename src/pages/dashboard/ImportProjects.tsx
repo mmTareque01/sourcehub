@@ -59,11 +59,9 @@ export default function ImportProjects() {
                             jsonData = jsonData.filter(item => item.title && item.title.trim() !== '');
                         }
 
-                        console.log("Filtered JSON Data:", jsonData);
                         await createBulkProject(jsonData);
                         alert('Successfully created new projects');
                     } else {
-                        console.error("File content is not a string.");
                     }
                 } catch (error) {
                     console.error("Invalid JSON file:", error);

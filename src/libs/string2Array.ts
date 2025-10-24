@@ -1,5 +1,4 @@
 export const stringToarray = (str: string) => {
-  console.log({ str });
   if (!str) return [];
 
   if (Array.isArray(str)) return str;

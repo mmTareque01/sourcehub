@@ -10,7 +10,6 @@ export const getProjects = async (
 ) => {
   const from = (page - 1) * limit;
   const to = from + limit - 1;
-  console.log({ q });
 
   let query = supabase
     .from("projects")

@@ -45,7 +45,7 @@ export default function AddProject() {
             }
         }
         catch (error) {
-            console.log('error: ', error)
+            console.error('error: ', error)
         }
         finally {
             setLoading(false);
@@ -72,7 +72,6 @@ export default function AddProject() {
                 <Form<SubmitProjectFormProps>
                     fields={ProjectFormFields}
                     onSubmit={(data) => {
-                        // console.log(data)
                         handleSubmit(data as SubmitProjectFormProps)
                     }}
                     submitText='Submit Project'

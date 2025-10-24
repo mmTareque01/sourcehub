@@ -65,5 +65,5 @@ const columns = [
     // { key: "description", header: "Description", className: "" },
     // { key: "action", header: "Action", className: "text-center" },
     { key: "created_at", header: "Created At", className: "text-center" },
-    { key: "status", header: "Status", className: "text-center" },
+    { key: "action", header: "Action", className: "text-center" },
 ];

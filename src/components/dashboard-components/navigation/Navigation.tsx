@@ -23,9 +23,7 @@ export default function Navigation({
 
   const { expandedSidebar } = useAppSettings();
   const pathname = usePathname();
-  console.log({pathname})
   const isActive = useCallback((path: string) => pathname === path, [pathname]);
-  console.log({isActive})
   const subMenuRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
   const handleSubmenuToggle = (index: number, menuType: "main" | "others") => {
