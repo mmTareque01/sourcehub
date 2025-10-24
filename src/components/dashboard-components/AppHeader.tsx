@@ -1,18 +1,9 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-// import { useSidebar } from "../context/SidebarContext";
-// import { ThemeToggleButton } from "../components/common/ThemeToggleButton";
-// import NotificationDropdown from "../components/header/NotificationDropdown";
-// import UserDropdown from "../components/header/UserDropdown";
 import Image from "next/image";
-// import NotificationDropdown from "./NotificationDropdown";
-// import UserDropdown from "./UserDropdown";
 import { useAppSettings } from "@/stores/app-settings-store";
-import Button from "../Button";
-import { supabase } from "@/backend/connection";
 import { useAppStore } from "@/stores/app.store";
-// import { ThemeToggleButton } from "../ThemeToggleButton";
 
 const AppHeader = () => {
   const [isApplicationMenuOpen, setApplicationMenuOpen] = useState(false);
@@ -141,18 +132,7 @@ const AppHeader = () => {
           <div className="flex items-center gap-2 2xsm:gap-3">
             {/* <ThemeToggleButton /> */}
 
-            <Button
-              // href={'/'}
-              onClick={async () => {
-                console.log('cliekded')
-                await supabase.auth.signOut();
-                // router.push('/login')
-                // router.refresh();
-              }}
-              className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#6b78f0]  text-sm font-bold leading-normal tracking-[0.015em]"
-            >
-              <span className="truncate">Log out</span>
-            </Button>
+
 
             {/* <NotificationDropdown /> */}
           </div>

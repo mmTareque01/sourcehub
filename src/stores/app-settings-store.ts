@@ -1,15 +1,16 @@
 // stores/app-settings-store.ts
-import { create } from 'zustand';
-import { persist } from 'zustand/middleware';
+import { create } from "zustand";
+import { persist } from "zustand/middleware";
 
-type Theme = 'light' | 'dark' | 'system';
-type Language = 'en' | 'es' | 'fr';
+type Theme = "light" | "dark" | "system";
+type Language = "en" | "es" | "fr";
 
 type AppSettings = {
   theme: Theme;
   language: Language;
   notificationsEnabled: boolean;
   expandedSidebar: boolean;
+  adminSideBarWidth: string;
 
   setTheme: (theme: Theme) => void;
   toggleTheme: () => void;
@@ -17,13 +18,15 @@ type AppSettings = {
   toggleNotifications: () => void;
   toggleSidebar: () => void;
   resetSettings: () => void;
+  setAdminSideBarWidth: (width: string) => void;
 };
 
 const DEFAULT_SETTINGS = {
-  theme: 'system' as Theme,
-  language: 'en' as Language,
+  theme: "system" as Theme,
+  language: "en" as Language,
   notificationsEnabled: true,
   expandedSidebar: true,
+  adminSideBarWidth: "250px",
 };
 
 export const useAppSettings = create<AppSettings>()(
@@ -35,7 +38,7 @@ export const useAppSettings = create<AppSettings>()(
 
       toggleTheme: () => {
         const current = get().theme;
-        const nextTheme = current === 'light' ? 'dark' : 'light';
+        const nextTheme = current === "light" ? "dark" : "light";
         set({ theme: nextTheme });
       },
 
@@ -48,12 +51,14 @@ export const useAppSettings = create<AppSettings>()(
         set((state) => ({ expandedSidebar: !state.expandedSidebar })),
 
       resetSettings: () => set(DEFAULT_SETTINGS),
+      setAdminSideBarWidth: (width) => set({ adminSideBarWidth: width }),
     }),
     {
-      name: 'app-settings',
+      name: "app-settings",
       partialize: (state) => ({
         theme: state.theme,
         language: state.language,
+        adminSideBarWidth: state.adminSideBarWidth,
       }),
     }
   )
