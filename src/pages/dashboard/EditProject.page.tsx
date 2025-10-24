@@ -1,4 +1,5 @@
 import Loading from '@/app/loading'
+import Button from '@/components/Button'
 import Form from '@/components/Form'
 import { ProjectFormFields } from '@/constants/SubmitProject'
 import { useProjects } from '@/hook/callAPI.tsx/useProjects'
@@ -8,7 +9,9 @@ import { useProjectStore } from '@/stores/projects.store'
 import { FieldProps } from '@/types/Form/form'
 import { SubmitProjectFormProps } from '@/types/Form/SubmitProject.form'
 import { ProjectType } from '@/types/project'
+import { useRouter } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
+import { IoReturnUpBack } from 'react-icons/io5'
 
 export default function EditProject({ projectId }: { projectId: string }) {
     const { setHeader } = useAppStore();
@@ -18,6 +21,7 @@ export default function EditProject({ projectId }: { projectId: string }) {
     const { project } = useProjectStore();
     const { handleGetProjectById, handleUpdateProject } = useProjects();
     const [apiSuccess, setApiSuccess] = useState(false);
+    const router = useRouter();
 
     const handleSubmit = async (data: SubmitProjectFormProps) => {
         // setLoading(true);
@@ -39,7 +43,7 @@ export default function EditProject({ projectId }: { projectId: string }) {
             }
         }
         const updated = await handleUpdateProject(project.id as string, formData as ProjectType)
-   
+
         if (updated) {
 
             alert('updated data')
@@ -114,7 +118,7 @@ export default function EditProject({ projectId }: { projectId: string }) {
                 setLoading(true);
                 const result = await handleGetProjectById(projectId); // fetch & store project
                 setApiSuccess(result)
-               
+
             }
         };
 
@@ -129,9 +133,15 @@ export default function EditProject({ projectId }: { projectId: string }) {
     }, [project?.id, apiSuccess]); // Only run when project.id is available
     React.useEffect(() => {
         setHeader(
-            <p className="text-2xl font-bold capitalize">
-               Update Project
-            </p>
+  <div className='flex justify-between items-center'> {/* Added items-center for vertical alignment */}
+      
+      {/* Title Section */}
+      <p className="text-2xl font-bold capitalize">
+        Update Project
+      </p>
+      
+  
+    </div>
         )
     }, [])
 
@@ -143,7 +153,7 @@ export default function EditProject({ projectId }: { projectId: string }) {
             <div
                 className='bg-white shadow-lg rounded-2xl p-5'
             >
-               
+
                 <Form<SubmitProjectFormProps>
                     // fields={getFormFieldsWithDefaults(project as SubmitProjectFormProps)}
                     fields={fields}

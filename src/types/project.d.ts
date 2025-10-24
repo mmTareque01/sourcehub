@@ -17,3 +17,5 @@ export interface ProjectType extends Record<string, string | number | boolean> {
     gitlab?: string;
   };
 }
+
+

@@ -4,11 +4,15 @@ import Link from "next/link";
 import Image from "next/image";
 import { useAppSettings } from "@/stores/app-settings-store";
 import { useAppStore } from "@/stores/app.store";
+import Button from "../Button";
+import { IoReturnUpBack } from "react-icons/io5";
+import { useRouter } from "next/navigation";
 
 const AppHeader = () => {
   const [isApplicationMenuOpen, setApplicationMenuOpen] = useState(false);
   const { toggleSidebar } = useAppSettings();
   const { header } = useAppStore();
+  const router = useRouter();
 
   // const { isMobileOpen } = useSidebar();
   const inputRef = useRef<HTMLInputElement>(null);
@@ -131,7 +135,18 @@ const AppHeader = () => {
         >
           <div className="flex items-center gap-2 2xsm:gap-3">
             {/* <ThemeToggleButton /> */}
-
+        <Button 
+          onClick={() => {
+            // 3. Use the router.back() function
+            router.back(); 
+          }}
+     
+          className='bg-gray-200 hover:bg-gray-300 p-1 rounded-full' 
+          variant="ghost" // Use a variant that allows custom styling, if available
+        >
+          {/* Note: The color is set directly on the icon, not via the button's className */}
+          <IoReturnUpBack color='#4560FF' size={30}/> 
+        </Button>
 
 
             {/* <NotificationDropdown /> */}
